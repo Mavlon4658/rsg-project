@@ -1,0 +1,200 @@
+.footer {
+    position: relative;
+    z-index: 1;
+    padding: 80px 0;
+
+    @include media(992) {
+        padding: 32px 0;
+    }
+
+    &-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        object-fit: cover;
+    }
+
+    &-head {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        gap: 85px;
+        border-bottom: 1px solid #d9d9d9;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+
+        @include media(992) {
+            gap: 39px;
+            padding-bottom: 115px;
+            position: relative;
+        }
+
+        @include media(700) {
+            flex-direction: column;
+            gap: 48px;
+            padding-bottom: 20px;
+        }
+    }
+
+    &-left {
+        width: 305px;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @include media(992) {
+            width: 280px;
+        }
+
+        @include media(750) {
+            width: 200px;
+        }
+
+        @include media(700) {
+            gap: 32px;
+        }
+
+        p {
+            font-style: italic;
+            font-weight: 400;
+            font-size: 15px;
+            margin-top: 20px;
+
+            @include media(700) {
+                max-width: 280px;
+            }
+        }
+
+        .tel {
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 16px;
+            color: #f4925e;
+
+            @include media(992) {
+                font-size: 18px;
+                line-height: 13px;
+            }
+        }
+
+        .tg-link {
+            display: inline-flex;
+            align-items: center;
+            font-weight: 400;
+            font-size: 15px;
+            gap: 12px;
+
+            img {
+                width: 38px;
+                flex-shrink: 0;
+            }
+            
+            b {
+                font-weight: 600;
+            }
+        }
+    }
+
+    &-content {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        @include media(992) {
+            gap: 48px;
+        }
+
+        @include media(700) {
+            flex-direction: column;
+
+            div {
+                order: 2;
+            }
+        }
+
+        h3 {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 13px;
+            margin-bottom: 32px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 38px;
+
+            @include media(992) {
+                gap: 20px;
+            }
+
+            @include media(700) {
+                order: 2;
+            }
+
+            a {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 13px;
+            }
+        }
+
+        .btn-white {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 32px 8px 14px;
+            background: rgba(255, 255, 255, 0.25);
+            border: 1px solid #fff;
+            border-radius: 100px;
+            font-weight: 400;
+            font-size: 15px;
+
+            @include media(992) {
+                position: absolute;
+                left: 50%;
+                bottom: 20px;
+                transform: translateX(-50%);
+                width: 305px;
+                text-align: center;
+                justify-content: center;
+            }
+
+            @include media(700) {
+                position: static;
+                transform: translate(0);
+                width: 100%;
+                order: 1;
+            }
+
+            img {
+                width: 33.34px;
+            }
+        }
+    }
+
+    &-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include media(700) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 32px;
+        }
+
+        a {
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 11px;
+            text-decoration: underline;
+            text-decoration-skip-ink: none;
+        }
+    }
+}

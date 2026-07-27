@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Fotns -->
+    <link rel="stylesheet" href="./assets/fonts/Coolvetica/font.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Syle CSS -->
+    <link rel="stylesheet" href="./assets/scss/style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="container header-container">
+                <a href="/" class="header-logo">
+                    <img src="./assets/images/logo.svg" alt="">
+                </a>
+                <ul class="header-navs">
+                    <li>
+                        <div class="header-accordion">
+                            <button class="header-accordion__btn">
+                                <span>Каталог коттеджей</span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 9L12 15L18 9" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <ul class="header-accordion__list">
+                                <li><a href="#">Все дома</a></li>
+                                <li><a href="#">Готовые дома</a></li>
+                                <li><a href="#">Строящиеся дома</a></li>
+                                <li><a href="#">Дома в аренде</a></li>
+                                <li><a href="#">Проданные дома</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Проекты</a>
+                    </li>
+                    <li>
+                        <a href="#">О компании</a>
+                    </li>
+                    <li>
+                        <a href="#">Новости</a>
+                    </li>
+                    <li>
+                        <a href="#">Поиск</a>
+                    </li>
+                </ul>
+                <div class="header-right">
+                    <a href="#">
+                        <img src="./assets/images/telegram-icon.svg" alt="">
+                    </a>
+                    <a href="tel:+92544404040" class="tel">925 | 4440-40-40</a>
+                </div>
+                <button class="header-bars">
+                    <img src="./assets/images/bars.svg" alt="">
+                </button>
+            </div>
+        </header>
+        <!-- Header end -->
+
+        <!-- Menu -->
+        <div class="menu">
+            <div class="container">
+                <div class="menu-head">
+                    <img src="./assets/images/logo.svg" alt="">
+                    <button class="menu-close">
+                        <img src="./assets/images/times-white.svg" alt="">
+                    </button>
+                </div>
+                <div class="menu-content">
+                    <ul class="menu-navs">
+                        <li>
+                            <div class="menu-accordion">
+                                <button class="menu-accordion__btn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 9L12 15L18 9" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>Каталог коттеджей</span>
+                                </button>
+                                <ul class="menu-accordion__list">
+                                    <li><a href="#">Все дома</a></li>
+                                    <li><a href="#">Готовые дома</a></li>
+                                    <li><a href="#">Строящиеся дома</a></li>
+                                    <li><a href="#">Дома в аренде</a></li>
+                                    <li><a href="#">Проданные дома</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Проекты</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Поиск</a></li>
+                    </ul>
+                    <div class="menu-bottom">
+                        <a href="#">
+                            <img src="./assets/images/telegram-icon.svg" alt="">
+                        </a>
+                        <a href="tel:+92544404040" class="tel">925 | 4440-40-40</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menu end -->
+    
+        <main>
+
+            <!-- Breadcrumb -->
+            <section class="breadcrumb">
+                <div class="container breadcrumb-container">
+                    <ul>
+                        <li>
+                            <a href="/">Главная</a>
+                        </li>
+                        <li>
+                            <span>/</span>
+                        </li>
+                    </ul>
+                    <p>Информационная система RSG</p>
+                </div>
+            </section>
+            <!-- Breadcrumb end -->
+
+            <!-- Information -->
+            <section class="information">
+                <div class="container information-container">
+                    <div class="information-head">
+                        <img src="./assets/images/information-head-bg.png" alt="" class="bg-img">
+                        <h2 class="sec-title">
+                            ИС- RSG <span>Информационная система для коттеджей</span>
+                        </h2>
+                        <p>Это система которая позволяет получать ответы на вопросы покупателей коттеджей RSG в том месте, где они у них возникли. Представляет из себя метки в виде QR-кодов или NFS-меток размещенных в тех местах, где возникают вопросы. При сканировании метки открывается доступ к соответствующей странице сайта, где размещен ответ на возникший вопрос. Видеообзор первой версии доступен по <a href="#">этой ссылке</a>. </p>
+                        <img src="./assets/images/information-head-card.png" alt="" class="information-head__card">
+                    </div>
+                    <div class="tab-btn">
+                        <!-- <a href="#" class="active">Отопление</a> -->
+                        <a href="#">Отопление</a>
+                        <a href="#">Водоснабжение, канализация</a>
+                        <a href="#">Электрика</a>
+                        <a href="#">Вентиляция</a>
+                        <a href="#">Умный дом от RSG</a>
+                        <a href="#">Вентиляция</a>
+                        <a href="#">Отопление</a>
+                        <a href="#">Водоснабжение, канализация</a>
+                        <a href="#">Электрика</a>
+                        <a href="#">Вентиляция</a>
+                        <a href="#">Умный дом от RSG</a>
+                        <a href="#">Вентиляция</a>
+                        <a href="#">Отопление</a>
+                        <a href="#">Водоснабжение, канализация</a>
+                        <a href="#">Электрика</a>
+                        <a href="#">Вентиляция</a>
+                        <a href="#">Умный дом от RSG</a>
+                        <a href="#">Вентиляция</a>
+                    </div>
+                    <div class="information-list">
+                        <div class="information-card">
+                            <h3>Отопление</h3>
+                            <div class="information-card__content">
+                                <ul>
+                                    <li>Газовый котёл отопления</li>
+                                    <li>Центральный пульт управления газовым котлом</li>
+                                    <li>Косой фильтр системы отопления</li>
+                                    <li>Краны на коллекторе отопления</li>
+                                    <li>Термостаты управления приборами отопления</li>
+                                    <li>Дополнительный электрический котел отопления</li>
+                                    <li>Газгольдер</li>
+                                    <li>Подогрев газгольдера</li>
+                                </ul>
+                                <ul>
+                                    <li>Инфракрасный подогрев окна</li>
+                                    <li>Стандартная механическая термоголовка</li>
+                                    <li>Привод клапана управляющего прибором отопления</li>
+                                    <li>Термостат управляющий электрическим теплым полом</li>
+                                    <li>Электрический полотенцесушитель №1</li>
+                                    <li>Экономия на отоплении с использованием кондиционера</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="information-card">
+                            <h3>Водоснабжение, канализация</h3>
+                            <div class="information-card__content">
+                                <ul>
+                                    <li>Газовый котёл отопления</li>
+                                    <li>Центральный пульт управления газовым котлом</li>
+                                    <li>Косой фильтр системы отопления</li>
+                                    <li>Краны на коллекторе отопления</li>
+                                    <li>Термостаты управления приборами отопления</li>
+                                    <li>Дополнительный электрический котел отопления</li>
+                                    <li>Газгольдер</li>
+                                    <li>Подогрев газгольдера</li>
+                                </ul>
+                                <ul>
+                                    <li>Инфракрасный подогрев окна</li>
+                                    <li>Стандартная механическая термоголовка</li>
+                                    <li>Привод клапана управляющего прибором отопления</li>
+                                    <li>Термостат управляющий электрическим теплым полом</li>
+                                    <li>Электрический полотенцесушитель №1</li>
+                                    <li>Экономия на отоплении с использованием кондиционера</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="information-card">
+                            <h3>Электрика</h3>
+                            <div class="information-card__content">
+                                <ul>
+                                    <li>Газовый котёл отопления</li>
+                                    <li>Центральный пульт управления газовым котлом</li>
+                                    <li>Косой фильтр системы отопления</li>
+                                    <li>Краны на коллекторе отопления</li>
+                                    <li>Термостаты управления приборами отопления</li>
+                                    <li>Дополнительный электрический котел отопления</li>
+                                    <li>Газгольдер</li>
+                                    <li>Подогрев газгольдера</li>
+                                </ul>
+                                <ul>
+                                    <li>Инфракрасный подогрев окна</li>
+                                    <li>Стандартная механическая термоголовка</li>
+                                    <li>Привод клапана управляющего прибором отопления</li>
+                                    <li>Термостат управляющий электрическим теплым полом</li>
+                                    <li>Электрический полотенцесушитель №1</li>
+                                    <li>Экономия на отоплении с использованием кондиционера</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="information-card">
+                            <h3>Вентиляция</h3>
+                            <div class="information-card__content">
+                                <ul>
+                                    <li>Газовый котёл отопления</li>
+                                    <li>Центральный пульт управления газовым котлом</li>
+                                    <li>Косой фильтр системы отопления</li>
+                                    <li>Краны на коллекторе отопления</li>
+                                    <li>Термостаты управления приборами отопления</li>
+                                    <li>Дополнительный электрический котел отопления</li>
+                                    <li>Газгольдер</li>
+                                    <li>Подогрев газгольдера</li>
+                                </ul>
+                                <ul>
+                                    <li>Инфракрасный подогрев окна</li>
+                                    <li>Стандартная механическая термоголовка</li>
+                                    <li>Привод клапана управляющего прибором отопления</li>
+                                    <li>Термостат управляющий электрическим теплым полом</li>
+                                    <li>Электрический полотенцесушитель №1</li>
+                                    <li>Экономия на отоплении с использованием кондиционера</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="information-card">
+                            <h3>Умный дом от RSG</h3>
+                            <div class="information-card__content">
+                                <ul>
+                                    <li>Газовый котёл отопления</li>
+                                    <li>Центральный пульт управления газовым котлом</li>
+                                    <li>Косой фильтр системы отопления</li>
+                                    <li>Краны на коллекторе отопления</li>
+                                    <li>Термостаты управления приборами отопления</li>
+                                    <li>Дополнительный электрический котел отопления</li>
+                                    <li>Газгольдер</li>
+                                    <li>Подогрев газгольдера</li>
+                                </ul>
+                                <ul>
+                                    <li>Инфракрасный подогрев окна</li>
+                                    <li>Стандартная механическая термоголовка</li>
+                                    <li>Привод клапана управляющего прибором отопления</li>
+                                    <li>Термостат управляющий электрическим теплым полом</li>
+                                    <li>Электрический полотенцесушитель №1</li>
+                                    <li>Экономия на отоплении с использованием кондиционера</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="information-card">
+                            <h3>Бытовая техника</h3>
+                            <div class="information-card__content">
+                                <ul>
+                                    <li>Газовый котёл отопления</li>
+                                    <li>Центральный пульт управления газовым котлом</li>
+                                    <li>Косой фильтр системы отопления</li>
+                                    <li>Краны на коллекторе отопления</li>
+                                    <li>Термостаты управления приборами отопления</li>
+                                    <li>Дополнительный электрический котел отопления</li>
+                                    <li>Газгольдер</li>
+                                    <li>Подогрев газгольдера</li>
+                                </ul>
+                                <ul>
+                                    <li>Инфракрасный подогрев окна</li>
+                                    <li>Стандартная механическая термоголовка</li>
+                                    <li>Привод клапана управляющего прибором отопления</li>
+                                    <li>Термостат управляющий электрическим теплым полом</li>
+                                    <li>Электрический полотенцесушитель №1</li>
+                                    <li>Экономия на отоплении с использованием кондиционера</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="information-card">
+                            <h3>Разное</h3>
+                            <div class="information-card__content">
+                                <ul>
+                                    <li>Газовый котёл отопления</li>
+                                    <li>Центральный пульт управления газовым котлом</li>
+                                    <li>Косой фильтр системы отопления</li>
+                                    <li>Краны на коллекторе отопления</li>
+                                    <li>Термостаты управления приборами отопления</li>
+                                    <li>Дополнительный электрический котел отопления</li>
+                                    <li>Газгольдер</li>
+                                    <li>Подогрев газгольдера</li>
+                                </ul>
+                                <ul>
+                                    <li>Инфракрасный подогрев окна</li>
+                                    <li>Стандартная механическая термоголовка</li>
+                                    <li>Привод клапана управляющего прибором отопления</li>
+                                    <li>Термостат управляющий электрическим теплым полом</li>
+                                    <li>Электрический полотенцесушитель №1</li>
+                                    <li>Экономия на отоплении с использованием кондиционера</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="information-card">
+                            <h3>Наши разработки</h3>
+                            <div class="information-card__content">
+                                <ul>
+                                    <li>Газовый котёл отопления</li>
+                                    <li>Центральный пульт управления газовым котлом</li>
+                                    <li>Косой фильтр системы отопления</li>
+                                    <li>Краны на коллекторе отопления</li>
+                                    <li>Термостаты управления приборами отопления</li>
+                                    <li>Дополнительный электрический котел отопления</li>
+                                    <li>Газгольдер</li>
+                                    <li>Подогрев газгольдера</li>
+                                </ul>
+                                <ul>
+                                    <li>Инфракрасный подогрев окна</li>
+                                    <li>Стандартная механическая термоголовка</li>
+                                    <li>Привод клапана управляющего прибором отопления</li>
+                                    <li>Термостат управляющий электрическим теплым полом</li>
+                                    <li>Электрический полотенцесушитель №1</li>
+                                    <li>Экономия на отоплении с использованием кондиционера</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="information-card">
+                            <h3>Информационные метки</h3>
+                            <div class="information-card__content">
+                                <ul>
+                                    <li>Газовый котёл отопления</li>
+                                    <li>Центральный пульт управления газовым котлом</li>
+                                    <li>Косой фильтр системы отопления</li>
+                                    <li>Краны на коллекторе отопления</li>
+                                    <li>Термостаты управления приборами отопления</li>
+                                    <li>Дополнительный электрический котел отопления</li>
+                                    <li>Газгольдер</li>
+                                    <li>Подогрев газгольдера</li>
+                                </ul>
+                                <ul>
+                                    <li>Инфракрасный подогрев окна</li>
+                                    <li>Стандартная механическая термоголовка</li>
+                                    <li>Привод клапана управляющего прибором отопления</li>
+                                    <li>Термостат управляющий электрическим теплым полом</li>
+                                    <li>Электрический полотенцесушитель №1</li>
+                                    <li>Экономия на отоплении с использованием кондиционера</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Information end -->
+
+            <!-- Other information -->
+            <section class="other-information">
+                <div class="container other-information__container">
+                    <h2 class="sec-title">Другие метки</h2>
+                    <ul>
+                        <li>Газовый котёл отопления</li>
+                        <li>Центральный пульт управления газовым котлом</li>
+                        <li>Косой фильтр системы отопления</li>
+                        <li>Краны на коллекторе отопления</li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Other information end -->
+
+            <!-- Information tags -->
+            <section class="information-tags">
+                <div class="container information-tags__container">
+                    <h2 class="sec-title">Устаревшие и не применяющиеся метки</h2>
+                    <div class="information-tags__content">
+                        <div class="information-tags__card">
+                            <h3>Устаревшие метки</h3>
+                            <ul>
+                                <li>Термостат теплого пола (простой, стандартный), Не применяется с 2018 года по причине перехода на умный дом.</li>
+                                <li>Краны регулировки теплых полов.  В связи с применением коллекторов с электронным управлением, данная система не применяется с 2022 года.</li>
+                                <li>Автоматическая подсветка при входе в дом (суммеричный датчик). Не применяется с 2020 года по причине перехода на умный дом</li>
+                                <li>Телевизионная антенна (не применяется с 2012 года) по причине перехода телевизоров на WiFi</li>
+                            </ul>
+                        </div>
+                        <div class="information-tags__card">
+                            <h3>Умная термоголовка (Образец №1)</h3>
+                            <ul>
+                                <li>Видео-обзор. Инструкция.</li>
+                                <li>Обзор возможностей.</li>
+                                <li>Скан инструкции от производителя.</li>
+                                <li>Инструкция от RSG.</li>
+                                <li>Батарея иногда горячая, но в комнате периодически становится холодно.</li>
+                            </ul>
+                        </div>
+                        <div class="information-tags__card">
+                            <h3>Умный дом на базе устройств Sonoff (не применяется с 2020 года)</h3>
+                            <ul>
+                                <li>Термостат теплого пола (простой, стандартный), Не применяется с 2018 года по причине перехода на умный дом.</li>
+                                <li>Краны регулировки теплых полов.  В связи с применением коллекторов с электронным управлением, данная система не применяется с 2022 года.</li>
+                                <li>Автоматическая подсветка при входе в дом (суммеричный датчик). Не применяется с 2020 года по причине перехода на умный дом</li>
+                                <li>Телевизионная антенна (не применяется с 2012 года) по причине перехода телевизоров на WiFi</li>
+                            </ul>
+                        </div>
+                        <div class="information-tags__card">
+                            <h3>Умная термоголовка (Образец №1)</h3>
+                            <ul>
+                                <li>Видео-обзор. Инструкция.</li>
+                                <li>Обзор возможностей.</li>
+                                <li>Скан инструкции от производителя.</li>
+                                <li>Инструкция от RSG.</li>
+                                <li>Батарея иногда горячая, но в комнате периодически становится холодно.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Information tags end -->
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <img src="./assets/images/footer-bg.png" alt="" class="footer-bg">
+            <div class="container footer-container">
+                <div class="footer-head">
+                    <div class="footer-left">
+                        <div>
+                            <a href="/">
+                                <img src="./assets/images/logo.svg" alt="">
+                            </a>
+                            <p>Удовольствие от хорошего качества длится дольше, чем радость от низкой цены</p>
+                        </div>
+                        <a href="tel:+92544404040" class="tel">925 | 4440-40-40</a>
+                        <a href="#" class="tg-link">
+                            <img src="./assets/images/telegram-icon.svg" alt="">
+                            <span>
+                                Есть вопрос? <br>
+                                <b>Задайте онлайн</b>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="footer-content">
+                        <div>
+                            <h3>Каталог коттеджей</h3>
+                            <ul>
+                                <li><a href="#">Все объекты</a></li>
+                                <li><a href="#">Готовые дома</a></li>
+                                <li><a href="#">Строящиеся дома</a></li>
+                                <li><a href="#">Дома в аренде</a></li>
+                                <li><a href="#">Проданные дома</a></li>
+                            </ul>
+                        </div>
+                        <ul>
+                            <li><a href="#">Проекты</a></li>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Разработки</a></li>
+                            <li><a href="#">Статьи</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                        <a href="#" class="btn-white">
+                            <img src="./assets/images/link-icon.svg" alt="">
+                            <span>ИС RSG</span>
+                        </a>
+                    </div>
+                </div>
+                <ul class="footer-bottom">
+                    <li>
+                        <a href="#">Пользовательское соглашение</a>
+                    </li>
+                    <li>
+                        <a href="#">cookie</a>
+                    </li>
+                    <li>
+                        <a href="#">Политика конфиденциальности</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <!-- Footer end -->
+    </div>
+
+    <!-- iMask JS -->
+    <script src="./assets/js/iMask.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- JS file -->
+    <script src="./assets/js/main.js"></script>
+
+</body>
+</html>

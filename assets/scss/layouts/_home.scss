@@ -1,0 +1,112 @@
+.home {
+    position: relative;
+    z-index: 1;
+
+    &-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+
+        @include media(992) {
+            display: none;
+        }
+
+        &.lg {
+            display: none;
+
+            @include media(992) {
+                display: block;
+            }
+        }
+    }
+
+    &-container {
+        height: 954px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 336px 0 93px;
+
+        @include media(992) {
+            padding: 116px 0 135px;
+            height: 722px;
+            font-size: 26px;
+        }
+
+        @include media(700) {
+            padding: 141px 0 104px;
+        }
+    }
+
+    h1 {
+        font-family: $font-coolvetica-condensed;
+        font-weight: 400;
+        font-size: 62px;
+        line-height: 95%;
+        text-transform: uppercase;
+        color: #141414;
+        max-width: 745px;
+
+        @include media(992) {
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 4px;
+            font-size: 40px;
+        }
+
+        @include media(700) {
+            font-size: 26px;
+        }
+
+        span {
+            display: inline;
+
+            @include media(992) {
+                display: block;
+                line-height: 33px;
+            }
+
+            @include media(700) {
+                line-height: 22px;
+            }
+
+            &:last-child {
+                font-size: 53px;
+                color: #f4925e;
+
+                @include media(992) {
+                    font-size: 46px;
+                    line-height: 38px;
+                }
+
+                @include media(700) {
+                    font-size: 31px;
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+
+    p {
+        font-style: italic;
+        font-weight: 400;
+        font-size: 22px;
+        color: #fff;
+        max-width: 590px;
+
+        @include media(992) {
+            max-width: 476px;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 18px;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.copyright {
+    padding: 120px 0;
+
+    @include media(992) {
+        padding: 100px 0;
+    }
+
+    @include media(700) {
+        padding: 84px 0;
+    }
+
+    .sec-title {
+        line-height: 35px;
+        margin-bottom: 30px;
+
+        @include media(992) {
+            line-height: 31px;
+        }
+    }
+
+    ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    li {
+        font-size: 18px;
+        line-height: 133%;
+
+        @include media(992) {
+            font-size: 15px;
+            line-height: 147%;
+        }
+
+        a {
+            display: inline;
+            text-decoration: underline;
+            text-decoration-skip-ink: none;
+        }
+    }
+}

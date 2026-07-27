@@ -1,0 +1,2814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Fotns -->
+    <link rel="stylesheet" href="./assets/fonts/Coolvetica/font.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Syle CSS -->
+    <link rel="stylesheet" href="./assets/scss/style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="container header-container">
+                <a href="/" class="header-logo">
+                    <img src="./assets/images/logo.svg" alt="">
+                </a>
+                <ul class="header-navs">
+                    <li>
+                        <div class="header-accordion">
+                            <button class="header-accordion__btn">
+                                <span>Каталог коттеджей</span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 9L12 15L18 9" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <ul class="header-accordion__list">
+                                <li><a href="#">Все дома</a></li>
+                                <li><a href="#">Готовые дома</a></li>
+                                <li><a href="#">Строящиеся дома</a></li>
+                                <li><a href="#">Дома в аренде</a></li>
+                                <li><a href="#">Проданные дома</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Проекты</a>
+                    </li>
+                    <li>
+                        <a href="#">О компании</a>
+                    </li>
+                    <li>
+                        <a href="#">Новости</a>
+                    </li>
+                    <li>
+                        <a href="#">Поиск</a>
+                    </li>
+                </ul>
+                <div class="header-right">
+                    <a href="#">
+                        <img src="./assets/images/telegram-icon.svg" alt="">
+                    </a>
+                    <a href="tel:+92544404040" class="tel">925 | 4440-40-40</a>
+                </div>
+                <button class="header-bars">
+                    <img src="./assets/images/bars.svg" alt="">
+                </button>
+            </div>
+        </header>
+        <!-- Header end -->
+
+        <!-- Menu -->
+        <div class="menu">
+            <div class="container">
+                <div class="menu-head">
+                    <img src="./assets/images/logo.svg" alt="">
+                    <button class="menu-close">
+                        <img src="./assets/images/times-white.svg" alt="">
+                    </button>
+                </div>
+                <div class="menu-content">
+                    <ul class="menu-navs">
+                        <li>
+                            <div class="menu-accordion">
+                                <button class="menu-accordion__btn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 9L12 15L18 9" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>Каталог коттеджей</span>
+                                </button>
+                                <ul class="menu-accordion__list">
+                                    <li><a href="#">Все дома</a></li>
+                                    <li><a href="#">Готовые дома</a></li>
+                                    <li><a href="#">Строящиеся дома</a></li>
+                                    <li><a href="#">Дома в аренде</a></li>
+                                    <li><a href="#">Проданные дома</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Проекты</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Поиск</a></li>
+                    </ul>
+                    <div class="menu-bottom">
+                        <a href="#">
+                            <img src="./assets/images/telegram-icon.svg" alt="">
+                        </a>
+                        <a href="tel:+92544404040" class="tel">925 | 4440-40-40</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menu end -->
+    
+        <main>
+
+            <!-- Home -->
+            <section class="home">
+                <img src="./assets/images/home-bg.png" alt="" class="home-bg">
+                <img src="./assets/images/home-bg-lg.png" alt="" class="home-bg lg">
+                <div class="container home-container">
+                    <h1>
+                        <span>Мы строим капитальные монолитные</span> 
+                        <span>коттеджи для круглогодичного проживания</span>
+                    </h1>
+                    <p>Удовольствие от хорошего качества длится дольше, чем радость от низкой цены</p>
+                </div>
+            </section>
+            <!-- Home end -->
+
+            <!-- Cottage -->
+            <section class="cottage">
+                <div class="container cottage-container">
+                    <div class="sec-head">
+                        <h2 class="sec-title">Каталог <span>коттеджей</span></h2>
+                        <div class="sec-alert">256 объектов</div>
+                    </div>
+                    <div class="description">В каталоге собраны готовые, строящиеся, проданные коттеджи RSG, а также дома, доступные для аренды</div>
+                    <div class="swiper cottage-swp">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <button class="active">Все объекты</button>
+                            </div>
+                            <div class="swiper-slide">
+                                <button>Готовые дома</button>
+                            </div>
+                            <div class="swiper-slide">
+                                <button>Строящиеся дома</button>
+                            </div>
+                            <div class="swiper-slide">
+                                <button>Дома в аренде</button>
+                            </div>
+                            <div class="swiper-slide">
+                                <button>Проданные дома</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cottage-content">
+                        <div class="cottage-content__item active">
+                            <div class="cottage-list">
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-green">Готовый дом</div>
+                                        <img src="./assets/images/cottage-card-1.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Под ключ</span>
+                                                    <b>100%</b>
+                                                </div>
+                                                <div class="degree-list__line success-line">
+                                                    <span style="width: 100%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-blue">Строится</div>
+                                        <img src="./assets/images/cottage-card-2.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Строительство</span>
+                                                    <b>40%</b>
+                                                </div>
+                                                <div class="degree-list__line green-line">
+                                                    <span style="width: 40%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Отделка</span>
+                                                    <b>20%</b>
+                                                </div>
+                                                <div class="degree-list__line blue-line">
+                                                    <span style="width: 20%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Благоустройство</span>
+                                                    <b>14%</b>
+                                                </div>
+                                                <div class="degree-list__line blue-line">
+                                                    <span style="width: 14%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Коттедж</span>
+                                                    <b>78%</b>
+                                                </div>
+                                                <div class="degree-list__line yellow-line">
+                                                    <span style="width: 78%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="situation-text">
+                                            <li>Этап: <b>Завершение строительства стен</b></li>
+                                            <li>Завершение: <b>Июль 2026г</b></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-yellow">В аренде</div>
+                                        <img src="./assets/images/cottage-card-3.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Под ключ</span>
+                                                    <b>100%</b>
+                                                </div>
+                                                <div class="degree-list__line success-line">
+                                                    <span style="width: 100%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-green">Готовый дом</div>
+                                        <img src="./assets/images/cottage-card-4.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Под ключ</span>
+                                                    <b>100%</b>
+                                                </div>
+                                                <div class="degree-list__line success-line">
+                                                    <span style="width: 100%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-blue">Строится</div>
+                                        <img src="./assets/images/cottage-card-2.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Строительство</span>
+                                                    <b>40%</b>
+                                                </div>
+                                                <div class="degree-list__line green-line">
+                                                    <span style="width: 40%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Отделка</span>
+                                                    <b>20%</b>
+                                                </div>
+                                                <div class="degree-list__line blue-line">
+                                                    <span style="width: 20%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Благоустройство</span>
+                                                    <b>14%</b>
+                                                </div>
+                                                <div class="degree-list__line blue-line">
+                                                    <span style="width: 14%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Коттедж</span>
+                                                    <b>78%</b>
+                                                </div>
+                                                <div class="degree-list__line yellow-line">
+                                                    <span style="width: 78%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="situation-text">
+                                            <li>Этап: <b>Завершение строительства стен</b></li>
+                                            <li>Завершение: <b>Июль 2026г</b></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-yellow">В аренде</div>
+                                        <img src="./assets/images/cottage-card-3.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Под ключ</span>
+                                                    <b>100%</b>
+                                                </div>
+                                                <div class="degree-list__line success-line">
+                                                    <span style="width: 100%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-green">Готовый дом</div>
+                                        <img src="./assets/images/cottage-card-1.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Под ключ</span>
+                                                    <b>100%</b>
+                                                </div>
+                                                <div class="degree-list__line success-line">
+                                                    <span style="width: 100%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-blue">Строится</div>
+                                        <img src="./assets/images/cottage-card-2.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Строительство</span>
+                                                    <b>40%</b>
+                                                </div>
+                                                <div class="degree-list__line green-line">
+                                                    <span style="width: 40%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Отделка</span>
+                                                    <b>20%</b>
+                                                </div>
+                                                <div class="degree-list__line blue-line">
+                                                    <span style="width: 20%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Благоустройство</span>
+                                                    <b>14%</b>
+                                                </div>
+                                                <div class="degree-list__line blue-line">
+                                                    <span style="width: 14%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Коттедж</span>
+                                                    <b>78%</b>
+                                                </div>
+                                                <div class="degree-list__line yellow-line">
+                                                    <span style="width: 78%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="situation-text">
+                                            <li>Этап: <b>Завершение строительства стен</b></li>
+                                            <li>Завершение: <b>Июль 2026г</b></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-yellow">В аренде</div>
+                                        <img src="./assets/images/cottage-card-3.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Под ключ</span>
+                                                    <b>100%</b>
+                                                </div>
+                                                <div class="degree-list__line success-line">
+                                                    <span style="width: 100%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="more-btn">
+                                <a href="#" class="btn-main">Показать ещё</a>
+                            </div>
+                        </div>
+                        <div class="cottage-content__item">
+                            <div class="cottage-list">
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-green">Готовый дом</div>
+                                        <img src="./assets/images/cottage-card-1.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки 2</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Под ключ</span>
+                                                    <b>100%</b>
+                                                </div>
+                                                <div class="degree-list__line success-line">
+                                                    <span style="width: 100%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-blue">Строится</div>
+                                        <img src="./assets/images/cottage-card-2.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Строительство</span>
+                                                    <b>40%</b>
+                                                </div>
+                                                <div class="degree-list__line green-line">
+                                                    <span style="width: 40%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Отделка</span>
+                                                    <b>20%</b>
+                                                </div>
+                                                <div class="degree-list__line blue-line">
+                                                    <span style="width: 20%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Благоустройство</span>
+                                                    <b>14%</b>
+                                                </div>
+                                                <div class="degree-list__line blue-line">
+                                                    <span style="width: 14%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Коттедж</span>
+                                                    <b>78%</b>
+                                                </div>
+                                                <div class="degree-list__line yellow-line">
+                                                    <span style="width: 78%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="situation-text">
+                                            <li>Этап: <b>Завершение строительства стен</b></li>
+                                            <li>Завершение: <b>Июль 2026г</b></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-yellow">В аренде</div>
+                                        <img src="./assets/images/cottage-card-3.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Под ключ</span>
+                                                    <b>100%</b>
+                                                </div>
+                                                <div class="degree-list__line success-line">
+                                                    <span style="width: 100%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-green">Готовый дом</div>
+                                        <img src="./assets/images/cottage-card-4.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Под ключ</span>
+                                                    <b>100%</b>
+                                                </div>
+                                                <div class="degree-list__line success-line">
+                                                    <span style="width: 100%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-blue">Строится</div>
+                                        <img src="./assets/images/cottage-card-2.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Строительство</span>
+                                                    <b>40%</b>
+                                                </div>
+                                                <div class="degree-list__line green-line">
+                                                    <span style="width: 40%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Отделка</span>
+                                                    <b>20%</b>
+                                                </div>
+                                                <div class="degree-list__line blue-line">
+                                                    <span style="width: 20%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Благоустройство</span>
+                                                    <b>14%</b>
+                                                </div>
+                                                <div class="degree-list__line blue-line">
+                                                    <span style="width: 14%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Коттедж</span>
+                                                    <b>78%</b>
+                                                </div>
+                                                <div class="degree-list__line yellow-line">
+                                                    <span style="width: 78%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="situation-text">
+                                            <li>Этап: <b>Завершение строительства стен</b></li>
+                                            <li>Завершение: <b>Июль 2026г</b></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-yellow">В аренде</div>
+                                        <img src="./assets/images/cottage-card-3.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Под ключ</span>
+                                                    <b>100%</b>
+                                                </div>
+                                                <div class="degree-list__line success-line">
+                                                    <span style="width: 100%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-green">Готовый дом</div>
+                                        <img src="./assets/images/cottage-card-1.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Под ключ</span>
+                                                    <b>100%</b>
+                                                </div>
+                                                <div class="degree-list__line success-line">
+                                                    <span style="width: 100%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-blue">Строится</div>
+                                        <img src="./assets/images/cottage-card-2.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Строительство</span>
+                                                    <b>40%</b>
+                                                </div>
+                                                <div class="degree-list__line green-line">
+                                                    <span style="width: 40%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Отделка</span>
+                                                    <b>20%</b>
+                                                </div>
+                                                <div class="degree-list__line blue-line">
+                                                    <span style="width: 20%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Благоустройство</span>
+                                                    <b>14%</b>
+                                                </div>
+                                                <div class="degree-list__line blue-line">
+                                                    <span style="width: 14%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Коттедж</span>
+                                                    <b>78%</b>
+                                                </div>
+                                                <div class="degree-list__line yellow-line">
+                                                    <span style="width: 78%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="situation-text">
+                                            <li>Этап: <b>Завершение строительства стен</b></li>
+                                            <li>Завершение: <b>Июль 2026г</b></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-yellow">В аренде</div>
+                                        <img src="./assets/images/cottage-card-3.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Под ключ</span>
+                                                    <b>100%</b>
+                                                </div>
+                                                <div class="degree-list__line success-line">
+                                                    <span style="width: 100%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="more-btn">
+                                <a href="#" class="btn-main">Показать ещё</a>
+                            </div>
+                        </div>
+                        <div class="cottage-content__item">
+                            <div class="cottage-list">
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-green">Готовый дом</div>
+                                        <img src="./assets/images/cottage-card-1.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки 3</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Под ключ</span>
+                                                    <b>100%</b>
+                                                </div>
+                                                <div class="degree-list__line success-line">
+                                                    <span style="width: 100%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-blue">Строится</div>
+                                        <img src="./assets/images/cottage-card-2.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Строительство</span>
+                                                    <b>40%</b>
+                                                </div>
+                                                <div class="degree-list__line green-line">
+                                                    <span style="width: 40%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Отделка</span>
+                                                    <b>20%</b>
+                                                </div>
+                                                <div class="degree-list__line blue-line">
+                                                    <span style="width: 20%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Благоустройство</span>
+                                                    <b>14%</b>
+                                                </div>
+                                                <div class="degree-list__line blue-line">
+                                                    <span style="width: 14%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Коттедж</span>
+                                                    <b>78%</b>
+                                                </div>
+                                                <div class="degree-list__line yellow-line">
+                                                    <span style="width: 78%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="situation-text">
+                                            <li>Этап: <b>Завершение строительства стен</b></li>
+                                            <li>Завершение: <b>Июль 2026г</b></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-yellow">В аренде</div>
+                                        <img src="./assets/images/cottage-card-3.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Под ключ</span>
+                                                    <b>100%</b>
+                                                </div>
+                                                <div class="degree-list__line success-line">
+                                                    <span style="width: 100%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-green">Готовый дом</div>
+                                        <img src="./assets/images/cottage-card-4.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Под ключ</span>
+                                                    <b>100%</b>
+                                                </div>
+                                                <div class="degree-list__line success-line">
+                                                    <span style="width: 100%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-blue">Строится</div>
+                                        <img src="./assets/images/cottage-card-2.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Строительство</span>
+                                                    <b>40%</b>
+                                                </div>
+                                                <div class="degree-list__line green-line">
+                                                    <span style="width: 40%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Отделка</span>
+                                                    <b>20%</b>
+                                                </div>
+                                                <div class="degree-list__line blue-line">
+                                                    <span style="width: 20%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Благоустройство</span>
+                                                    <b>14%</b>
+                                                </div>
+                                                <div class="degree-list__line blue-line">
+                                                    <span style="width: 14%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Коттедж</span>
+                                                    <b>78%</b>
+                                                </div>
+                                                <div class="degree-list__line yellow-line">
+                                                    <span style="width: 78%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="situation-text">
+                                            <li>Этап: <b>Завершение строительства стен</b></li>
+                                            <li>Завершение: <b>Июль 2026г</b></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-yellow">В аренде</div>
+                                        <img src="./assets/images/cottage-card-3.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Под ключ</span>
+                                                    <b>100%</b>
+                                                </div>
+                                                <div class="degree-list__line success-line">
+                                                    <span style="width: 100%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-green">Готовый дом</div>
+                                        <img src="./assets/images/cottage-card-1.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Под ключ</span>
+                                                    <b>100%</b>
+                                                </div>
+                                                <div class="degree-list__line success-line">
+                                                    <span style="width: 100%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-blue">Строится</div>
+                                        <img src="./assets/images/cottage-card-2.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Строительство</span>
+                                                    <b>40%</b>
+                                                </div>
+                                                <div class="degree-list__line green-line">
+                                                    <span style="width: 40%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Отделка</span>
+                                                    <b>20%</b>
+                                                </div>
+                                                <div class="degree-list__line blue-line">
+                                                    <span style="width: 20%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Благоустройство</span>
+                                                    <b>14%</b>
+                                                </div>
+                                                <div class="degree-list__line blue-line">
+                                                    <span style="width: 14%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Коттедж</span>
+                                                    <b>78%</b>
+                                                </div>
+                                                <div class="degree-list__line yellow-line">
+                                                    <span style="width: 78%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="situation-text">
+                                            <li>Этап: <b>Завершение строительства стен</b></li>
+                                            <li>Завершение: <b>Июль 2026г</b></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-yellow">В аренде</div>
+                                        <img src="./assets/images/cottage-card-3.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Под ключ</span>
+                                                    <b>100%</b>
+                                                </div>
+                                                <div class="degree-list__line success-line">
+                                                    <span style="width: 100%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="more-btn">
+                                <a href="#" class="btn-main">Показать ещё</a>
+                            </div>
+                        </div>
+                        <div class="cottage-content__item">
+                            <div class="cottage-list">
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-green">Готовый дом</div>
+                                        <img src="./assets/images/cottage-card-1.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки 4</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Под ключ</span>
+                                                    <b>100%</b>
+                                                </div>
+                                                <div class="degree-list__line success-line">
+                                                    <span style="width: 100%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-blue">Строится</div>
+                                        <img src="./assets/images/cottage-card-2.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Строительство</span>
+                                                    <b>40%</b>
+                                                </div>
+                                                <div class="degree-list__line green-line">
+                                                    <span style="width: 40%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Отделка</span>
+                                                    <b>20%</b>
+                                                </div>
+                                                <div class="degree-list__line blue-line">
+                                                    <span style="width: 20%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Благоустройство</span>
+                                                    <b>14%</b>
+                                                </div>
+                                                <div class="degree-list__line blue-line">
+                                                    <span style="width: 14%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Коттедж</span>
+                                                    <b>78%</b>
+                                                </div>
+                                                <div class="degree-list__line yellow-line">
+                                                    <span style="width: 78%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="situation-text">
+                                            <li>Этап: <b>Завершение строительства стен</b></li>
+                                            <li>Завершение: <b>Июль 2026г</b></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-yellow">В аренде</div>
+                                        <img src="./assets/images/cottage-card-3.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Под ключ</span>
+                                                    <b>100%</b>
+                                                </div>
+                                                <div class="degree-list__line success-line">
+                                                    <span style="width: 100%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-green">Готовый дом</div>
+                                        <img src="./assets/images/cottage-card-4.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Под ключ</span>
+                                                    <b>100%</b>
+                                                </div>
+                                                <div class="degree-list__line success-line">
+                                                    <span style="width: 100%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-blue">Строится</div>
+                                        <img src="./assets/images/cottage-card-2.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Строительство</span>
+                                                    <b>40%</b>
+                                                </div>
+                                                <div class="degree-list__line green-line">
+                                                    <span style="width: 40%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Отделка</span>
+                                                    <b>20%</b>
+                                                </div>
+                                                <div class="degree-list__line blue-line">
+                                                    <span style="width: 20%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Благоустройство</span>
+                                                    <b>14%</b>
+                                                </div>
+                                                <div class="degree-list__line blue-line">
+                                                    <span style="width: 14%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Коттедж</span>
+                                                    <b>78%</b>
+                                                </div>
+                                                <div class="degree-list__line yellow-line">
+                                                    <span style="width: 78%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="situation-text">
+                                            <li>Этап: <b>Завершение строительства стен</b></li>
+                                            <li>Завершение: <b>Июль 2026г</b></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-yellow">В аренде</div>
+                                        <img src="./assets/images/cottage-card-3.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Под ключ</span>
+                                                    <b>100%</b>
+                                                </div>
+                                                <div class="degree-list__line success-line">
+                                                    <span style="width: 100%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-green">Готовый дом</div>
+                                        <img src="./assets/images/cottage-card-1.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Под ключ</span>
+                                                    <b>100%</b>
+                                                </div>
+                                                <div class="degree-list__line success-line">
+                                                    <span style="width: 100%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-blue">Строится</div>
+                                        <img src="./assets/images/cottage-card-2.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Строительство</span>
+                                                    <b>40%</b>
+                                                </div>
+                                                <div class="degree-list__line green-line">
+                                                    <span style="width: 40%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Отделка</span>
+                                                    <b>20%</b>
+                                                </div>
+                                                <div class="degree-list__line blue-line">
+                                                    <span style="width: 20%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Благоустройство</span>
+                                                    <b>14%</b>
+                                                </div>
+                                                <div class="degree-list__line blue-line">
+                                                    <span style="width: 14%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Коттедж</span>
+                                                    <b>78%</b>
+                                                </div>
+                                                <div class="degree-list__line yellow-line">
+                                                    <span style="width: 78%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="situation-text">
+                                            <li>Этап: <b>Завершение строительства стен</b></li>
+                                            <li>Завершение: <b>Июль 2026г</b></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-yellow">В аренде</div>
+                                        <img src="./assets/images/cottage-card-3.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Под ключ</span>
+                                                    <b>100%</b>
+                                                </div>
+                                                <div class="degree-list__line success-line">
+                                                    <span style="width: 100%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="more-btn">
+                                <a href="#" class="btn-main">Показать ещё</a>
+                            </div>
+                        </div>
+                        <div class="cottage-content__item">
+                            <div class="cottage-list">
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-green">Готовый дом</div>
+                                        <img src="./assets/images/cottage-card-1.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки 5</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Под ключ</span>
+                                                    <b>100%</b>
+                                                </div>
+                                                <div class="degree-list__line success-line">
+                                                    <span style="width: 100%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-blue">Строится</div>
+                                        <img src="./assets/images/cottage-card-2.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Строительство</span>
+                                                    <b>40%</b>
+                                                </div>
+                                                <div class="degree-list__line green-line">
+                                                    <span style="width: 40%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Отделка</span>
+                                                    <b>20%</b>
+                                                </div>
+                                                <div class="degree-list__line blue-line">
+                                                    <span style="width: 20%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Благоустройство</span>
+                                                    <b>14%</b>
+                                                </div>
+                                                <div class="degree-list__line blue-line">
+                                                    <span style="width: 14%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Коттедж</span>
+                                                    <b>78%</b>
+                                                </div>
+                                                <div class="degree-list__line yellow-line">
+                                                    <span style="width: 78%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="situation-text">
+                                            <li>Этап: <b>Завершение строительства стен</b></li>
+                                            <li>Завершение: <b>Июль 2026г</b></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-yellow">В аренде</div>
+                                        <img src="./assets/images/cottage-card-3.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Под ключ</span>
+                                                    <b>100%</b>
+                                                </div>
+                                                <div class="degree-list__line success-line">
+                                                    <span style="width: 100%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-green">Готовый дом</div>
+                                        <img src="./assets/images/cottage-card-4.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Под ключ</span>
+                                                    <b>100%</b>
+                                                </div>
+                                                <div class="degree-list__line success-line">
+                                                    <span style="width: 100%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-blue">Строится</div>
+                                        <img src="./assets/images/cottage-card-2.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Строительство</span>
+                                                    <b>40%</b>
+                                                </div>
+                                                <div class="degree-list__line green-line">
+                                                    <span style="width: 40%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Отделка</span>
+                                                    <b>20%</b>
+                                                </div>
+                                                <div class="degree-list__line blue-line">
+                                                    <span style="width: 20%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Благоустройство</span>
+                                                    <b>14%</b>
+                                                </div>
+                                                <div class="degree-list__line blue-line">
+                                                    <span style="width: 14%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Коттедж</span>
+                                                    <b>78%</b>
+                                                </div>
+                                                <div class="degree-list__line yellow-line">
+                                                    <span style="width: 78%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="situation-text">
+                                            <li>Этап: <b>Завершение строительства стен</b></li>
+                                            <li>Завершение: <b>Июль 2026г</b></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-yellow">В аренде</div>
+                                        <img src="./assets/images/cottage-card-3.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Под ключ</span>
+                                                    <b>100%</b>
+                                                </div>
+                                                <div class="degree-list__line success-line">
+                                                    <span style="width: 100%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-green">Готовый дом</div>
+                                        <img src="./assets/images/cottage-card-1.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Под ключ</span>
+                                                    <b>100%</b>
+                                                </div>
+                                                <div class="degree-list__line success-line">
+                                                    <span style="width: 100%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-blue">Строится</div>
+                                        <img src="./assets/images/cottage-card-2.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Строительство</span>
+                                                    <b>40%</b>
+                                                </div>
+                                                <div class="degree-list__line green-line">
+                                                    <span style="width: 40%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Отделка</span>
+                                                    <b>20%</b>
+                                                </div>
+                                                <div class="degree-list__line blue-line">
+                                                    <span style="width: 20%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Благоустройство</span>
+                                                    <b>14%</b>
+                                                </div>
+                                                <div class="degree-list__line blue-line">
+                                                    <span style="width: 14%"></span>
+                                                </div>
+                                            </li>
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Коттедж</span>
+                                                    <b>78%</b>
+                                                </div>
+                                                <div class="degree-list__line yellow-line">
+                                                    <span style="width: 78%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="situation-text">
+                                            <li>Этап: <b>Завершение строительства стен</b></li>
+                                            <li>Завершение: <b>Июль 2026г</b></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cottage-card">
+                                    <div class="cottage-card__head">
+                                        <div class="cottage-card__alert alert-yellow">В аренде</div>
+                                        <img src="./assets/images/cottage-card-3.png" alt="" class="main-img">
+                                    </div>
+                                    <div class="cottage-card__body">
+                                        <div class="title-text">
+                                            <p>Коттедж "Удача-10.3"</p>
+                                            <b>Коттедж 96 кв. м. 6.3 сотки</b>
+                                        </div>
+                                        <ul class="statistic-text">
+                                            <li>Удаленность от МКАД: <b>7 км.</b></li>
+                                            <li>Локация: <b>КП “Ильинское ИЖС”</b></li>
+                                        </ul>
+                                        <div class="line"></div>
+                                        <div class="price-text">
+                                            <p>Стоимость</p>
+                                            <b>16 800 000 <span>руб.</span></b>
+                                        </div>
+                                        <a href="#" class="btn-main">Подробнее</a>
+                                        <div class="status-text">
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>Возможна семейная ипотека</span>
+                                        </div>
+                                        <ul class="degree-list">
+                                            <li class="degree-list__item">
+                                                <div class="degree-list__text">
+                                                    <span>Под ключ</span>
+                                                    <b>100%</b>
+                                                </div>
+                                                <div class="degree-list__line success-line">
+                                                    <span style="width: 100%"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="more-btn">
+                                <a href="#" class="btn-main">Показать ещё</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Cottage end -->
+
+            <!-- Ownership -->
+            <section class="ownership">
+                <div class="container ownership-container">
+                    <div class="ownership-head">
+                        <div class="ownership-head__text">
+                            <h2 class="sec-title">Инженерные разработки RSG для <span>комфортного владения</span></h2>
+                            <p>Мы создаём не просто дома, а продуманную систему для жизни: отопление, свет, безопасность, управление, инструкции и автоматические сценарии.</p>
+                        </div>
+                        <a href="#" class="btn-main">Все разработки</a>
+                    </div>
+                    <div class="ownership-list">
+                        <div class="ownership-card">
+                            <a href="#" class="ownership-card__head">
+                                <img src="./assets/images/ownership-card-1.png" alt="">
+                            </a>
+                            <div class="ownership-card__body">
+                                <a href="#">Умный дом RSG</a>
+                                <p>Управление отоплением, освещением, подсветкой, датчиками и сценариями дома.</p>
+                            </div>
+                        </div>
+                        <div class="ownership-card">
+                            <a href="#" class="ownership-card__head">
+                                <img src="./assets/images/ownership-card-2.png" alt="">
+                            </a>
+                            <div class="ownership-card__body">
+                                <a href="#">Цифровое отопление</a>
+                                <p>Водяные тёплые полы с отдельным контуром для каждого помещения.</p>
+                            </div>
+                        </div>
+                        <div class="ownership-card">
+                            <a href="#" class="ownership-card__head">
+                                <img src="./assets/images/ownership-card-3.png" alt="">
+                            </a>
+                            <div class="ownership-card__body">
+                                <a href="#">Роботизированная уборка</a>
+                                <p>Робот-уборщик с подключением к воде и канализации для автоматического ухода за полами.</p>
+                            </div>
+                        </div>
+                        <div class="ownership-card">
+                            <a href="#" class="ownership-card__head">
+                                <img src="./assets/images/ownership-card-4.png" alt="">
+                            </a>
+                            <div class="ownership-card__body">
+                                <a href="#">Ночная подсветка</a>
+                                <p>Мягкий свет для комфортного передвижения по дому в тёмное время суток.</p>
+                            </div>
+                        </div>
+                        <div class="ownership-card">
+                            <a href="#" class="ownership-card__head">
+                                <img src="./assets/images/ownership-card-5.png" alt="">
+                            </a>
+                            <div class="ownership-card__body">
+                                <a href="#">Подсветка фасада</a>
+                                <p>Архитектурная подсветка с автоматическим включением и сценариями.</p>
+                            </div>
+                        </div>
+                        <div class="ownership-card">
+                            <a href="#" class="ownership-card__head">
+                                <img src="./assets/images/ownership-card-6.png" alt="">
+                            </a>
+                            <div class="ownership-card__body">
+                                <a href="#">R-Климат</a>
+                                <p>Решения для комфортного микроклимата и чистого воздуха в доме.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="more-link">
+                        <a href="#" class="btn-main">Показать ещё</a>
+                    </div>
+                </div>
+            </section>
+            <!-- Ownership end -->
+
+            <!-- Support -->
+            <section class="support">
+                <img src="./assets/images/support-bg.png" alt="" class="support-bg">
+                <div class="container support-container">
+                    <div class="support-head">
+                        <div class="support-head__left">
+                            <h2>Сопровождение после покупки</h2>
+                            <p>Коттедж — это не квартира. В доме есть инженерия, оборудование и системы, с которыми важно уметь правильно работать. <br>Мы помогаем владельцам разобраться во всём после переезда.</p>
+                            <a href="#" class="btn-main">Как это работает?</a>
+                        </div>
+                        <div class="support-head__right">
+                            <div class="support-head__right-card">
+                                <img src="./assets/images/support-head-right-card.png" alt="" class="main-img">
+                                <button>
+                                    <img src="./assets/images/play-btn.svg" alt="">
+                                </button>
+                            </div>
+                            <p>Видео о подходе RSG</p>
+                        </div>
+                    </div>
+                    <div class="support-text">
+                        <h3>помощь</h3>
+                        <ul>
+                            <li>
+                                <img src="./assets/images/check-orange.svg" alt="">
+                                <span>Инструкции по эксплуатации дома</span>
+                            </li>
+                            <li>
+                                <img src="./assets/images/check-orange.svg" alt="">
+                                <span>Материалы по инженерным системам</span>
+                            </li>
+                            <li>
+                                <img src="./assets/images/check-orange.svg" alt="">
+                                <span>Рекомендации для владельцев</span>
+                            </li>
+                            <li>
+                                <img src="./assets/images/check-orange.svg" alt="">
+                                <span>Связь с компанией после покупки</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="support-content">
+                        <h3>Информационная система для <span>владельцев коттеджей</span></h3>
+                        <p>В домах RSG размещаются QR-коды, которые ведут к инструкциям, видео и пояснениям. Это помогает быстро понять, как пользоваться инженерией, оборудованием и возможностями дома.</p>
+                        <ul class="support-content__list">
+                            <li>
+                                <img src="./assets/images/support-content-card-1.png" alt="" class="main-img">
+                                <span>Владелец <br> находит метку <br> или QR-код.</span>
+                            </li>
+                            <li>
+                                <img src="./assets/images/support-content-list-icon.svg" alt="" class="icon">
+                                <img src="./assets/images/arrow-right-icon.svg" alt="" class="icon lg">
+                                <img src="./assets/images/arrow-down-icon.svg" alt="" class="icon sm">
+                            </li>
+                            <li>
+                                <img src="./assets/images/support-content-card-2.png" alt="" class="main-img">
+                                <span>Сканирует <br> смартфоном</span>
+                            </li>
+                            <li>
+                                <img src="./assets/images/support-content-list-icon.svg" alt="" class="icon">
+                                <img src="./assets/images/arrow-right-icon.svg" alt="" class="icon lg">
+                                <img src="./assets/images/arrow-down-icon.svg" alt="" class="icon sm">
+                            </li>
+                            <li>
+                                <img src="./assets/images/support-content-card-3.png" alt="" class="main-img">
+                                <span>Получает понятное объяснение по системе дома</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn-main">Перейти к инструкциям</a>
+                    </div>
+                </div>
+            </section>
+            <!-- Support end -->
+
+            <!-- Project -->
+            <section class="project">
+                <div class="container project-container">
+                    <div class="project-head">
+                        <div class="project-head__left">
+                            <h2 class="sec-title">Проекты <span>коттеджей RSG</span></h2>
+                            <p>Каждый проект RSG — это не просто планировка, а результат многолетней доработки, практического опыта, обратной связи покупателей и постоянной модернизации.</p>
+                        </div>
+                        <a href="#" class="project-head__link">
+                            <img src="./assets/images/project-head-link.png" alt="" class="main-img">
+                            <img src="./assets/images/project-head-link-sm.png" alt="" class="main-img sm">
+                            <span>
+                                <b>
+                                    <span>Экспертное проектирование</span>
+                                    <img src="./assets/images/chevron-right.svg" alt="" class="icon">
+                                </b>
+                                <span>Мы не копируем типовые решения, а дорабатываем проекты после каждого реализованного дома.</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-content__item">
+                            <h3>Актуальные проекты</h3>
+                            <div class="project-content__list">
+                                <div class="project-card">
+                                    <a href="#" class="project-card__head">
+                                        <img src="./assets/images/project-card-1.png" alt="">
+                                    </a>
+                                    <div class="project-card__body">
+                                        <div class="project-card__body-head">
+                                            <h4>Удача</h4>
+                                            <b>
+                                                <img src="./assets/images/zoom-icon.svg" alt="">
+                                                <span>56-156 кв.м.</span>
+                                            </b>
+                                        </div>
+                                        <p>Проекты RSG — это не абстрактные планировки, а проверенные коттеджи, которые уже построены и используются</p>
+                                        <a href="#">Подробнее</a>
+                                    </div>
+                                </div>
+                                <div class="project-card">
+                                    <a href="#" class="project-card__head">
+                                        <img src="./assets/images/project-card-2.png" alt="">
+                                    </a>
+                                    <div class="project-card__body">
+                                        <div class="project-card__body-head">
+                                            <h4>Орешник</h4>
+                                            <b>
+                                                <img src="./assets/images/zoom-icon.svg" alt="">
+                                                <span>56-156 кв.м.</span>
+                                            </b>
+                                        </div>
+                                        <p>Проекты RSG — это не абстрактные планировки, а проверенные коттеджи, которые уже построены и используются</p>
+                                        <a href="#">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content__item">
+                            <h3>Вспомогательные сооружения</h3>
+                            <div class="project-content__list col-3">
+                                <div class="project-card">
+                                    <a href="#" class="project-card__head">
+                                        <img src="./assets/images/project-card-3.png" alt="">
+                                    </a>
+                                    <div class="project-card__body">
+                                        <div class="project-card__body-head">
+                                            <h4>Гостевые дома</h4>
+                                            <b>
+                                                <img src="./assets/images/zoom-icon.svg" alt="">
+                                                <span>56-156 кв.м.</span>
+                                            </b>
+                                        </div>
+                                        <p>Проекты RSG — это не абстрактные планировки, а проверенные коттеджи, которые уже построены и используются</p>
+                                        <a href="#">Подробнее</a>
+                                    </div>
+                                </div>
+                                <div class="project-card">
+                                    <a href="#" class="project-card__head">
+                                        <img src="./assets/images/project-card-4.png" alt="">
+                                    </a>
+                                    <div class="project-card__body">
+                                        <div class="project-card__body-head">
+                                            <h4>Гаражи</h4>
+                                            <b>
+                                                <img src="./assets/images/zoom-icon.svg" alt="">
+                                                <span>56-156 кв.м.</span>
+                                            </b>
+                                        </div>
+                                        <p>Проекты RSG — это не абстрактные планировки, а проверенные коттеджи, которые уже построены и используются</p>
+                                        <a href="#">Подробнее</a>
+                                    </div>
+                                </div>
+                                <div class="project-card">
+                                    <a href="#" class="project-card__head">
+                                        <img src="./assets/images/project-card-5.png" alt="">
+                                    </a>
+                                    <div class="project-card__body">
+                                        <div class="project-card__body-head">
+                                            <h4>Навесы под авто</h4>
+                                            <b>
+                                                <img src="./assets/images/zoom-icon.svg" alt="">
+                                                <span>56-156 кв.м.</span>
+                                            </b>
+                                        </div>
+                                        <p>Проекты RSG — это не абстрактные планировки, а проверенные коттеджи, которые уже построены и используются</p>
+                                        <a href="#">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content__item">
+                            <h3>Архивные проекты</h3>
+                            <div class="project-content__list col-3">
+                                <div class="project-card">
+                                    <a href="#" class="project-card__head">
+                                        <img src="./assets/images/project-card-6.png" alt="">
+                                    </a>
+                                    <div class="project-card__body">
+                                        <div class="project-card__body-head">
+                                            <h4>Уютный</h4>
+                                            <b>
+                                                <img src="./assets/images/zoom-icon.svg" alt="">
+                                                <span>56-156 кв.м.</span>
+                                            </b>
+                                        </div>
+                                        <p>Проекты RSG — это не абстрактные планировки, а проверенные коттеджи, которые уже построены и используются</p>
+                                        <a href="#">Подробнее</a>
+                                    </div>
+                                </div>
+                                <div class="project-card">
+                                    <a href="#" class="project-card__head">
+                                        <img src="./assets/images/project-card-7.png" alt="">
+                                    </a>
+                                    <div class="project-card__body">
+                                        <div class="project-card__body-head">
+                                            <h4>Лидер</h4>
+                                            <b>
+                                                <img src="./assets/images/zoom-icon.svg" alt="">
+                                                <span>56-156 кв.м.</span>
+                                            </b>
+                                        </div>
+                                        <p>Проекты RSG — это не абстрактные планировки, а проверенные коттеджи, которые уже построены и используются</p>
+                                        <a href="#">Подробнее</a>
+                                    </div>
+                                </div>
+                                <div class="project-card">
+                                    <a href="#" class="project-card__head">
+                                        <img src="./assets/images/project-card-8.png" alt="">
+                                    </a>
+                                    <div class="project-card__body">
+                                        <div class="project-card__body-head">
+                                            <h4>Мечта</h4>
+                                            <b>
+                                                <img src="./assets/images/zoom-icon.svg" alt="">
+                                                <span>56-156 кв.м.</span>
+                                            </b>
+                                        </div>
+                                        <p>Проекты RSG — это не абстрактные планировки, а проверенные коттеджи, которые уже построены и используются</p>
+                                        <a href="#">Подробнее</a>
+                                    </div>
+                                </div>
+                                <div class="project-card w-50">
+                                    <a href="#" class="project-card__head">
+                                        <img src="./assets/images/project-card-1.png" alt="">
+                                    </a>
+                                    <div class="project-card__body">
+                                        <div class="project-card__body-head">
+                                            <h4>Удача</h4>
+                                            <b>
+                                                <img src="./assets/images/zoom-icon.svg" alt="">
+                                                <span>56-156 кв.м.</span>
+                                            </b>
+                                        </div>
+                                        <p>Проекты RSG — это не абстрактные планировки, а проверенные коттеджи, которые уже построены и используются</p>
+                                        <a href="#">Подробнее</a>
+                                    </div>
+                                </div>
+                                <div class="project-card w-50">
+                                    <a href="#" class="project-card__head">
+                                        <img src="./assets/images/project-card-2.png" alt="">
+                                    </a>
+                                    <div class="project-card__body">
+                                        <div class="project-card__body-head">
+                                            <h4>Орешник</h4>
+                                            <b>
+                                                <img src="./assets/images/zoom-icon.svg" alt="">
+                                                <span>56-156 кв.м.</span>
+                                            </b>
+                                        </div>
+                                        <p>Проекты RSG — это не абстрактные планировки, а проверенные коттеджи, которые уже построены и используются</p>
+                                        <a href="#">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-foot">
+                        <img src="./assets/images/project-footer-bg.png" alt="" class="bg-img">
+                        <div class="project-foot__left">
+                            <h3>Вы получаете дом с понятным результатом</h3>
+                            <p>Мы строим коттеджи с 2004 года и постоянно улучшаем проекты на основе реализованных объектов, опыта эксплуатации и обратной связи покупателей. Поэтому каждый дом RSG — это не эксперимент, а продуманное решение для жизни.</p>
+                            <ul>
+                                <li>
+                                    <img src="./assets/images/check-orange.svg" alt="">
+                                    <span>капитальная монолитная конструкция</span>
+                                </li>
+                                <li>
+                                    <img src="./assets/images/check-orange.svg" alt="">
+                                    <span>газовое отопление и водяные тёплые полы</span>
+                                </li>
+                                <li>
+                                    <img src="./assets/images/check-orange.svg" alt="">
+                                    <span>готовая мебель, техника и коммуникации</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="project-foot__right">
+                            <li>
+                                <span>благоустроенный участок</span>
+                                <div class="dot"></div>
+                            </li>
+                            <li>
+                                <span>умный дом и инженерные разработки</span>
+                                <div class="dot"></div>
+                            </li>
+                            <li>
+                                <span>сопровождение после покупки</span>
+                                <div class="dot"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- Project end -->
+
+            <!-- contact -->
+            <section class="contact">
+                <img src="./assets/images/contact-bg.png" alt="" class="contact-bg">
+                <div class="container contact-container">
+                    <h2>Поможем подобрать <span>коттедж RSG</span></h2>
+                    <p>Оставьте заявку — расскажем, какие готовые и строящиеся дома доступны сейчас, покажем проекты и поможем подобрать подходящий вариант под ваши задачи. Или приезжайте на экскурсию. </p>
+                    <div class="contact-form">
+                        <input type="text" placeholder="Ваше имя" class="form-inp">
+                        <input type="tel" placeholder="Номер телефона" class="form-inp">
+                        <div class="form-select">
+                            <div class="form-select__btn">
+                                <span>Выбор интереса</span>
+                                <input type="text">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 9L12 15L18 9" stroke="#ABABAB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <ul class="form-select__list">
+                                <li>select-1</li>
+                                <li>select-2</li>
+                                <li>select-3</li>
+                                <li>select-4</li>
+                                <li>select-5</li>
+                            </ul>
+                        </div>
+                        <button class="btn-main">Связаться</button>
+                    </div>
+                </div>
+            </section>
+            <!-- contact end -->
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <img src="./assets/images/footer-bg.png" alt="" class="footer-bg">
+            <div class="container footer-container">
+                <div class="footer-head">
+                    <div class="footer-left">
+                        <div>
+                            <a href="/">
+                                <img src="./assets/images/logo.svg" alt="">
+                            </a>
+                            <p>Удовольствие от хорошего качества длится дольше, чем радость от низкой цены</p>
+                        </div>
+                        <a href="tel:+92544404040" class="tel">925 | 4440-40-40</a>
+                        <a href="#" class="tg-link">
+                            <img src="./assets/images/telegram-icon.svg" alt="">
+                            <span>
+                                Есть вопрос? <br>
+                                <b>Задайте онлайн</b>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="footer-content">
+                        <div>
+                            <h3>Каталог коттеджей</h3>
+                            <ul>
+                                <li><a href="#">Все объекты</a></li>
+                                <li><a href="#">Готовые дома</a></li>
+                                <li><a href="#">Строящиеся дома</a></li>
+                                <li><a href="#">Дома в аренде</a></li>
+                                <li><a href="#">Проданные дома</a></li>
+                            </ul>
+                        </div>
+                        <ul>
+                            <li><a href="#">Проекты</a></li>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Разработки</a></li>
+                            <li><a href="#">Статьи</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                        <a href="#" class="btn-white">
+                            <img src="./assets/images/link-icon.svg" alt="">
+                            <span>ИС RSG</span>
+                        </a>
+                    </div>
+                </div>
+                <ul class="footer-bottom">
+                    <li>
+                        <a href="#">Пользовательское соглашение</a>
+                    </li>
+                    <li>
+                        <a href="#">cookie</a>
+                    </li>
+                    <li>
+                        <a href="#">Политика конфиденциальности</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <!-- Footer end -->
+
+    </div>
+
+    <!-- iMask JS -->
+    <script src="./assets/js/iMask.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- JS file -->
+    <script src="./assets/js/main.js"></script>
+
+</body>
+</html>

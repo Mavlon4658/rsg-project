@@ -1,0 +1,286 @@
+.news {
+    padding-bottom: 120px;
+
+    @include media(992) {
+        padding-bottom: 100px;
+    }
+
+    @include media(700) {
+        padding-bottom: 84px;
+    }
+
+    .sec-title {
+        line-height: 35px;
+        margin-bottom: 48px;
+
+        @include media(992) {
+            line-height: 32px;
+            margin-bottom: 32px;
+        }
+
+        @include media(700) {
+            line-height: 27px;
+        }
+    }
+
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
+        @include media(992) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include media(700) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    &-card {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        border: 1px solid #f3f3f3;
+        border-radius: 12px;
+        padding: 24px 12px 20px;
+        box-shadow: 0 0 31px 0 rgba(0, 0, 0, 0.08);
+        background: #fff;
+        
+        @include media(992) {
+            padding-bottom: 35px;
+        }
+
+        @include media(700) {
+            padding-bottom: 20px;
+        }
+
+        &__title {
+            font-weight: 500;
+            font-size: 22px;
+            flex-shrink: 0;
+
+            @include media(992) {
+                font-size: 18px;
+            }
+        }
+
+        &__content {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 30px;
+
+            p {
+                font-weight: 400;
+                font-size: 18px;
+
+                @include media(992) {
+                    font-size: 15px;
+                }
+            }
+        }
+
+        &__foot {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            a {
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 15px;
+                color: #f4925e;
+                text-decoration: underline;
+            }
+
+            b {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 13px;
+            }
+        }
+    }
+
+    &-video {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 24px 12px;
+        border: 1px solid #f3f3f3;
+        border-radius: 12px;
+        box-shadow: 0 0 31px 0 rgba(0, 0, 0, 0.08);
+        background: #fff;
+
+        &__title {
+            font-weight: 500;
+            font-size: 22px;
+
+            @include media(992) {
+                font-size: 18px;
+            }
+        }
+
+        &__content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        &__block {
+            height: 190px;
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+
+            @include media(992) {
+                line-height: 150;
+            }
+
+            .bg-img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                z-index: -1;
+            }
+
+            .play-btn {
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.25);
+                backdrop-filter: blur(7.5px);
+            }
+        }
+        
+        p {
+            width: 100%;
+            text-align: right;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 13px;
+        }
+    }
+
+    .pagination {
+        width: 100%;
+        justify-content: center;
+        margin-top: 48px;
+
+        @include media(992) {
+            margin-top: 32px;
+        }
+    }
+}
+
+.news-page {
+    &__container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 20px;
+
+        @include media(992) {
+            flex-direction: column;
+        }
+    }
+
+    &__content {
+        width: 100%;
+
+        p {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 11px;
+            color: #a9a9a9;
+            margin-bottom: 20px;
+        }
+
+        .sec-title {
+            line-height: 35px;
+            margin-bottom: 28px;
+
+            @include media(992) {
+                line-height: 31px;
+                margin-bottom: 32px;
+            }
+
+            @include media(700) {
+                font-size: 27px;
+            }
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            li {
+                font-size: 18px;
+                line-height: 133%;
+
+                @include media(992) {
+                    line-height: 15px;
+                    line-height: 147%;
+                }
+            }
+        }
+    }
+
+    &__img {
+        width: calc(50% - 10px);
+        height: 408px;
+        object-fit: cover;
+        border-radius: 8px;
+        flex-shrink: 0;
+
+        @include media(992) {
+            width: 100%;
+        }
+
+        @include media(700) {
+            height: 320px;
+        }
+    }
+}
+
+.other-news {
+    padding: 120px 0;
+
+    @include media(992) {
+        padding: 100px 0;
+    }
+
+    @include media(700) {
+        padding: 84px 0;
+    }
+
+    .sec-title {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    .news-video {
+        @include media(992) {
+            display: none;
+        }
+
+        @include media(700) {
+            display: flex;
+        }
+    }
+}

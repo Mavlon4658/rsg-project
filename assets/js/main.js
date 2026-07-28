@@ -230,6 +230,64 @@ const searchResultBtn = new Swiper('.search-result .result-btns', {
     }
 })
 
+const faqSearchInp = document.querySelector('.faq-search input');
+const faqSearchInpBtn = document.querySelector('.faq-search button');
+
+if (faqSearchInp) {
+    faqSearchInp.oninput = () => {
+        console.log('hi');
+        if (faqSearchInp.value.length > 1) {
+            faqSearchInpBtn.classList.remove('hidden');
+        } else {
+            faqSearchInpBtn.classList.add('hidden');
+        }
+    }
+    faqSearchInpBtn.onclick = () => {
+        faqSearchInp.value = "";
+        faqSearchInpBtn.classList.add('hidden');
+    }
+}
+
+const modalClasses = ['.thanks-modal', '.question-modal'];
+if (modalClasses.length) {
+    modalClasses.forEach(cls => {
+        const m = document.querySelector(cls);
+        const mBg = document.querySelector(cls + ' .modal-bg');
+        const mCloseBtn = document.querySelector(cls + ' .modal-close');
+        const mOpenBtns = document.querySelectorAll(cls + '__open');
+        const mCloseBtn2 = document.querySelectorAll(cls + ' .btn-close');
+
+        if (m) {
+            mOpenBtns.forEach(btn => {
+                btn.onclick = e => {
+                    bodyHidden();
+                    e.preventDefault();
+                    m.classList.add('active');
+                }
+            })
+    
+            mBg.onclick = () => {
+                bodyVisible();
+                m.classList.remove('active');
+            }
+    
+            mCloseBtn.onclick = () => {
+                bodyVisible();
+                m.classList.remove('active');
+            }
+            
+            if (mCloseBtn2.length) {
+                mCloseBtn2.forEach(btn => {
+                    btn.onclick = () => {
+                        bodyVisible();
+                        m.classList.remove('active');
+                    }
+                })
+            }
+        }
+    });
+}
+
 
 
 

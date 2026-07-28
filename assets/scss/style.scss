@@ -404,6 +404,7 @@ button, input, textarea, li, div {
         font-size: 22px;
         color: #141414;
         padding: 32px;
+        user-select: none;
 
         @include media(992) {
             padding: 20px;

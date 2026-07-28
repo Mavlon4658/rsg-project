@@ -1,0 +1,205 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    &.active {
+        display: flex;
+    }
+
+    &-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(5.5px);
+        background: rgba(20, 20, 20, 0.5);
+    }
+
+    &-content {
+        position: relative;
+        z-index: 1;
+    }
+
+    &-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display: flex;
+
+        @include media(992) {
+            top: 12px;
+            right: 12px;
+        }
+
+        @include media(700) {
+            top: 20px;
+            right: 20px;
+        }
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.thanks-modal {
+    .modal-content {
+        border-radius: 36px;
+        padding: 52px;
+        width: 478px;
+        background: #fff;
+        position: relative;
+        
+        @include media(992) {
+            width: 100%;
+            max-width: 536px;
+            border-radius: 12px;
+            padding: 52px 32px;
+        }
+    }
+
+    .sec-title {
+        text-align: center;
+        margin-bottom: 16px;
+
+        @include media(992) {
+            margin-bottom: 32px;
+        }
+    }
+
+    p {
+        font-size: 18px;
+        text-align: center;
+
+        @include media(992) {
+            font-size: 15px;
+        }
+    }
+}
+
+.question-modal {
+    .bg-1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    
+    .bg-2 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+
+        @include media(992) {
+            width: 195px;
+        }
+
+        @include media(700) {
+            width: 94px;
+        }
+    }
+
+    .bg-3 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+
+        @include media(992) {
+            width: 233px;
+        }
+
+        @include media(700) {
+            width: 112px;
+        }
+    }
+
+    .modal-content {
+        background: linear-gradient(126.8deg, rgba(255, 255, 255, 0.9) 13.58%, rgba(255, 255, 255, 0.83) 64.53%);
+        border-radius: 36px;
+        overflow: hidden;
+        max-width: 100%;
+        width: 100%;
+        padding: 52px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        @include media(992) {
+            padding: 32px 20px;
+            border-radius: 12px;
+            gap: 0;
+        }
+    }
+
+    .modal-close {
+        @include media(992) {
+            top: 20px;
+            right: 20px;
+        }
+
+        @include media(700) {
+            top: 12px;
+            right: 12px;
+        }
+    }
+
+    .sec-title {
+        line-height: 35px;
+        text-align: center;
+        width: 100%;
+
+        @include media(992) {
+            line-height: 31px;
+            margin-bottom: 18px;
+        }
+
+        @include media(700) {
+            line-height: 27px;
+        }
+    }
+    
+    p {
+        font-size: 18px;
+        text-align: center;
+        max-width: 504px;
+        width: 100%;
+
+        @include media(992) {
+            max-width: 426px;
+            font-size: 15px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__form {
+        max-width: 443px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @include media(992) {
+            max-width: 314px;
+        }
+
+        .btn-main {
+            width: 100%;
+        }
+    }
+}

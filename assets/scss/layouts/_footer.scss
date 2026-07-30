@@ -4,7 +4,7 @@
     padding: 80px 0;
 
     @include media(992) {
-        padding: 32px 0;
+        padding: 32px 0 109px;
     }
 
     &-bg {
@@ -193,8 +193,12 @@
             font-weight: 600;
             font-size: 15px;
             line-height: 11px;
-            text-decoration: underline;
-            text-decoration-skip-ink: none;
+            border-bottom: 1px solid #141414;
+            padding-bottom: 4px;
+
+            @include media(992) {
+                padding-bottom: 3px;
+            }
         }
     }
 }

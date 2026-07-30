@@ -28,8 +28,8 @@
             top: 0;
             left: 50%;
             transform: translateX(-50%);
-            width: 100vw;
-            min-width: 100vw;
+            width: calc(100vw + 2px);
+            min-width: calc(100vw + 2px);
             height: 100%;
             object-fit: cover;
             border-radius: 12px;

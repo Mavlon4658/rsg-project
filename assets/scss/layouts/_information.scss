@@ -40,6 +40,12 @@
             @include media(700) {
                 line-height: 32px;
             }
+
+            span {
+                @include media(700) {
+                    display: inline;
+                }
+            }
         }
         
         p {
@@ -364,7 +370,7 @@
     &__navs {
         position: sticky;
         left: 0;
-        top: 0;
+        top: 100px;
         width: 285px;
         flex-shrink: 0;
         padding: 20px 12px;

@@ -6,7 +6,7 @@
     }
 
     @include media(700) {
-        min-height: 391px;
+        min-height: inherit;
     }
 
     &__container {
@@ -24,7 +24,7 @@
         }
 
         @include media(700) {
-            padding-top: 116px;
+            padding: 116px 0 84px;
         }
     }
 

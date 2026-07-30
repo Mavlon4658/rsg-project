@@ -14,7 +14,7 @@
 </head>
 <body>
     
-    <div class="wrapper">
+    <div class="wrapper overflow-visible">
 
         <!-- Header -->
         <header class="header">
@@ -109,6 +109,39 @@
             </div>
         </div>
         <!-- Menu end -->
+
+        <!-- Navs -->
+        <section class="navs">
+            <div class="container navs-container">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/images/navs-icon-1.svg" alt="">
+                            <span>Каталог</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/images/navs-icon-2.svg" alt="">
+                            <span>Поиск</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/images/navs-icon-3.svg" alt="">
+                            <span>Связаться</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="to-top__btn">
+                            <img src="./assets/images/navs-icon-4.svg" alt="">
+                            <span>Наверх</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Navs end -->
     
         <main>
 
@@ -137,28 +170,38 @@
             <!-- Article page -->
             <section class="article-page">
                 <div class="container article-page__container">
-                    <div class="article-page__left">
-                        <h3>Все публикации <span>22</span></h3>
-                        <ul>
-                            <li>
-                                <a href="#" class="active">О нас <span>2</span></a>
-                            </li>
-                            <li>
-                                <a href="#">Дом <span>15</span></a>
-                            </li>
-                            <li>
-                                <a href="#">Удобство <span>4</span></a>
-                            </li>
-                            <li>
-                                <a href="#">Советы покупателям <span>5</span></a>
-                            </li>
-                            <li>
-                                <a href="#">Обзоры <span>46</span></a>
-                            </li>
-                            <li>
-                                <a href="#">Стиль и красота <span>8</span></a>
-                            </li>
-                        </ul>
+                    <div class="article-page__navs">
+                        <button class="btn-prev">
+                            <img src="./assets/images/chevron-left-black.svg" alt="">
+                        </button>
+                        <button class="btn-next">
+                            <img src="./assets/images/chevron-right-black.svg" alt="">
+                        </button>
+                        <div class="swiper article-page__navs-swp">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <h3>Все публикации <span>22</span></h3>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="active">О нас <span>2</span></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">Дом <span>15</span></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">Удобство <span>4</span></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">Советы покупателям <span>5</span></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">Обзоры <span>46</span></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">Стиль и красота <span>8</span></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="article-page__right">
                         <div class="article-page__right-head">

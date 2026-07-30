@@ -48,6 +48,15 @@ if (menu) {
     }
 }
 
+const toTopBtn = document.querySelector('.to-top__btn');
+
+if (toTopBtn) {
+    toTopBtn.onclick = e => {
+        e.preventDefault();
+        window.scrollTo(0, 0);
+    }
+}
+
 const formSelects = document.querySelectorAll('.form-select');
 
 if (formSelects.length) {
@@ -79,30 +88,6 @@ const cottageSwp = new Swiper('.cottage-swp', {
         }
     }
 })
-
-const cottageTabBtns = document.querySelectorAll('.cottage-swp button');
-const cottageTabContents = document.querySelectorAll('.cottage-content__item');
-
-if (cottageTabContents.length) {
-    cottageTabBtns.forEach((btn, btnIdx) => {
-        btn.onclick = () => {
-            cottageTabContents.forEach((el, idx) => {
-                if (idx == btnIdx) {
-                    el.classList.add('active');
-                } else {
-                    el.classList.remove('active');
-                }
-            });
-            cottageTabBtns.forEach((el, idx) => {
-                if (idx == btnIdx) {
-                    el.classList.add('active');
-                } else {
-                    el.classList.remove('active');
-                }
-            });
-        }
-    })
-}
 
 const galleryTabBtns = document.querySelectorAll('.gallery .tab-btn button');
 const galleryContentItems = document.querySelectorAll('.gallery-content__item');
@@ -248,7 +233,7 @@ if (faqSearchInp) {
     }
 }
 
-const modalClasses = ['.thanks-modal', '.question-modal'];
+const modalClasses = ['.thanks-modal', '.question-modal', '.video-modal'];
 if (modalClasses.length) {
     modalClasses.forEach(cls => {
         const m = document.querySelector(cls);
@@ -287,6 +272,38 @@ if (modalClasses.length) {
         }
     });
 }
+
+const furnitureContent = document.querySelector('.furniture-content');
+const furnitureContentBtn = document.querySelector('.furniture-content .more-link');
+
+if (furnitureContent) {
+    furnitureContentBtn.onclick = () => {
+        furnitureContent.classList.toggle('active');
+    }
+}
+
+var articleSwpInit = false;
+var articleSwp;
+function articleSwpFunction() {
+    if (window.innerWidth <= 992) {
+        if (!articleSwpInit) {
+            articleSwpInit = true;
+            articleSwp = new Swiper(".article-page__navs-swp", {
+                slidesPerView: "auto",
+                spaceBetween: 8,
+                navigation: {
+                    nextEl: '.article-page__navs .btn-next',
+                    prevEl: '.article-page__navs .btn-prev',
+                }
+            });
+        }
+    } else if (articleSwpInit) {
+        articleSwp.destroy();
+        articleSwpInit = false;
+    }
+}
+articleSwpFunction();
+window.addEventListener("resize", articleSwpFunction);
 
 
 

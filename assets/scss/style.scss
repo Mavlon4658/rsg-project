@@ -8,11 +8,17 @@ body {
     font-weight: 400;
 }
 
+.wrapper.overflow-visible {
+    @include media(-992) {
+        overflow: visible;
+    }
+}
+
 main {
     min-height: calc(100svh - 527.5px);
     
     @include media(992) {
-        min-height: calc(100svh - 442px);
+        min-height: calc(100svh - 517px);
     }
 }
 
@@ -46,6 +52,10 @@ button, input, textarea, li, div {
         font-weight: 400;
         font-size: 18px;
         color: #141414;
+
+        @include media(700) {
+            font-size: 15px;
+        }
 
         &::placeholder {
             color: #ABABAB;
@@ -89,6 +99,10 @@ button, input, textarea, li, div {
             cursor: pointer;
             user-select: none;
 
+            @include media(700) {
+                font-size: 15px;
+            }
+
             &.selected {
                 color: #141414;
             }
@@ -115,6 +129,10 @@ button, input, textarea, li, div {
                 color: #141414;
                 padding: 6px 20px;
                 cursor: pointer;
+
+                @include media(700) {
+                    font-size: 15px;
+                }
 
                 &:first-child { 
                     padding-top: 12px;

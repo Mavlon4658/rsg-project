@@ -104,6 +104,12 @@
     }
 
     &-card {
+        @include media(700) {
+            &:nth-child(n+6) {
+                display: none;
+            }
+        }
+
         &__head {
             height: 226px;
             width: 100%;

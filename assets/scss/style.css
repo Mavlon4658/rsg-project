@@ -1389,13 +1389,13 @@ button, input, textarea, li, div {
   gap: 12px;
   margin-bottom: 30px;
 }
-.cottage-home__content h4 {
+.cottage-home__content .text-subtitle {
   font-weight: 500;
   font-size: 22px;
   color: #a9a9a9;
 }
 @media screen and (max-width: 992px) {
-  .cottage-home__content h4 {
+  .cottage-home__content .text-subtitle {
     font-size: 18px;
   }
 }
@@ -1490,13 +1490,13 @@ button, input, textarea, li, div {
   align-items: flex-start;
   gap: 12px;
 }
-.cottage-plan__content-text h4 {
+.cottage-plan__content-text .title {
   font-weight: 500;
   font-size: 18px;
   color: #b8b8b8;
 }
 @media screen and (max-width: 992px) {
-  .cottage-plan__content-text h4 {
+  .cottage-plan__content-text .title {
     font-size: 14px;
   }
 }

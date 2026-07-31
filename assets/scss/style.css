@@ -7926,13 +7926,13 @@ button, input, textarea, li, div {
 .faq-content__item {
   width: 100%;
 }
-.faq-content__item h3 {
+.faq-content__item-title {
   font-weight: 400;
   font-size: 36px;
   margin-bottom: 30px;
 }
 @media screen and (max-width: 992px) {
-  .faq-content__item h3 {
+  .faq-content__item-title {
     font-size: 24px;
   }
 }

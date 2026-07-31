@@ -5403,14 +5403,14 @@ button, input, textarea, li, div {
 .article-page__content .sec-title {
   margin-bottom: 30px;
 }
-.article-page__content h3 {
+.article-page__content h3, .article-page__content h2 {
   font-weight: 500;
   font-size: 36px;
   line-height: 26px;
   margin-bottom: 30px;
 }
 @media screen and (max-width: 992px) {
-  .article-page__content h3 {
+  .article-page__content h3, .article-page__content h2 {
     font-size: 24px;
     line-height: 17px;
   }

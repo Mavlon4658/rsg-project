@@ -7366,13 +7366,13 @@ button, input, textarea, li, div {
   box-shadow: 0 0 31px 0 rgba(0, 0, 0, 0.08);
   background: #fff;
 }
-.about-card__item h3 {
+.about-card__item-title {
   margin: 12px 0 6px;
   font-weight: 500;
   font-size: 22px;
 }
 @media screen and (max-width: 992px) {
-  .about-card__item h3 {
+  .about-card__item-title {
     font-size: 18px;
     margin: 12px 0 8px;
   }

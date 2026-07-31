@@ -3040,7 +3040,8 @@ button, input, textarea, li, div {
     order: 2;
   }
 }
-.footer-content h3 {
+.footer-content b {
+  display: block;
   font-weight: 600;
   font-size: 18px;
   line-height: 13px;

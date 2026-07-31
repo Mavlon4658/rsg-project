@@ -64,6 +64,10 @@ button, input, textarea, li, div {
         &:hover, &:focus {
             border-color: #a4a4a4;
         }
+
+        &.error {
+            border-color: red;
+        }
     }
 
     &-select {

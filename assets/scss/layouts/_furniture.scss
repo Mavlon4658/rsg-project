@@ -24,6 +24,12 @@
             padding: 32px 20px;
             border-radius: 12px;
         }
+
+        &:not(.active) {
+            .furniture-content {
+                display: none;
+            }
+        }
     }
 
     &-head {
@@ -38,6 +44,10 @@
             @include media(992) {
                 line-height: 27px;
             }
+        }
+
+        button {
+            display: flex;
         }
     }
 

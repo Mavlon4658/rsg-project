@@ -73,6 +73,7 @@ if (formSelects.length) {
                 el.classList.remove('active');
                 btn.classList.add('selected');
                 btn.querySelector('span').textContent = item.textContent;
+                btn.querySelector('input').value = item.textContent;
             }
         })
     })
@@ -113,23 +114,23 @@ if (galleryContentItems.length) {
     })
 }
 
-const objectLayoutTexts = document.querySelectorAll('.object-layout__text');
+// const objectLayoutTexts = document.querySelectorAll('.object-layout__text');
 
-if (objectLayoutTexts.length) {
-    objectLayoutTexts.forEach(item => {
-        const btn = item.querySelector('.object-layout__text-btn');
+// if (objectLayoutTexts.length) {
+//     objectLayoutTexts.forEach(item => {
+//         const btn = item.querySelector('.object-layout__text-btn');
 
-        btn.onclick = () => {
-            objectLayoutTexts.forEach(el => {
-                if (el == item) {
-                    el.classList.add('active');
-                } else {
-                    el.classList.remove('active');
-                }
-            })
-        }
-    })
-}
+//         btn.onclick = () => {
+//             objectLayoutTexts.forEach(el => {
+//                 if (el == item) {
+//                     el.classList.add('active');
+//                 } else {
+//                     el.classList.remove('active');
+//                 }
+//             })
+//         }
+//     })
+// }
 
 const objectLayoutTabBtns = document.querySelectorAll('.object-layout .tab-btn button');
 const objectLayoutContentItem = document.querySelectorAll('.object-layout__content-item');
@@ -150,6 +151,20 @@ if (objectLayoutTabBtns.length) {
                 } else {
                     el.classList.remove('active');
                 }
+            })
+        }
+    })
+}
+
+if (objectLayoutContentItem.length) {
+    objectLayoutContentItem.forEach(item => {
+        let mainImgs = item.querySelectorAll('.main-img');
+        let btn = item.querySelector('button');
+
+        btn.onclick = () => {
+            document.querySelector('.layout-modal').classList.add('active');
+            document.querySelectorAll('.layout-modal .modal-content .main-img').forEach((img, imgIdx) => {
+                img.setAttribute('src', mainImgs[imgIdx].getAttribute('src'));
             })
         }
     })
@@ -220,7 +235,6 @@ const faqSearchInpBtn = document.querySelector('.faq-search button');
 
 if (faqSearchInp) {
     faqSearchInp.oninput = () => {
-        console.log('hi');
         if (faqSearchInp.value.length > 1) {
             faqSearchInpBtn.classList.remove('hidden');
         } else {
@@ -233,7 +247,7 @@ if (faqSearchInp) {
     }
 }
 
-const modalClasses = ['.thanks-modal', '.question-modal', '.video-modal'];
+const modalClasses = ['.thanks-modal', '.question-modal', '.video-modal', '.layout-modal'];
 if (modalClasses.length) {
     modalClasses.forEach(cls => {
         const m = document.querySelector(cls);
@@ -241,8 +255,20 @@ if (modalClasses.length) {
         const mCloseBtn = document.querySelector(cls + ' .modal-close');
         const mOpenBtns = document.querySelectorAll(cls + '__open');
         const mCloseBtn2 = document.querySelectorAll(cls + ' .btn-close');
+        const iframeVideo = document.querySelector(cls + ' iframe');
 
         if (m) {
+            const closeVideo = () => {
+                iframeVideo.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: "command",
+                        func: "pauseVideo",
+                        args: []
+                    }),
+                    "*"
+                );
+            }
+
             mOpenBtns.forEach(btn => {
                 btn.onclick = e => {
                     bodyHidden();
@@ -254,11 +280,15 @@ if (modalClasses.length) {
             mBg.onclick = () => {
                 bodyVisible();
                 m.classList.remove('active');
+                if (iframeVideo) closeVideo();
             }
     
-            mCloseBtn.onclick = () => {
-                bodyVisible();
-                m.classList.remove('active');
+            if (mCloseBtn) {
+                mCloseBtn.onclick = () => {
+                    bodyVisible();
+                    m.classList.remove('active');
+                    if (iframeVideo) closeVideo();
+                }
             }
             
             if (mCloseBtn2.length) {
@@ -266,6 +296,7 @@ if (modalClasses.length) {
                     btn.onclick = () => {
                         bodyVisible();
                         m.classList.remove('active');
+                        if (iframeVideo) closeVideo();
                     }
                 })
             }
@@ -305,6 +336,88 @@ function articleSwpFunction() {
 articleSwpFunction();
 window.addEventListener("resize", articleSwpFunction);
 
+const contactForm = document.querySelector(".contact-form");
+
+if (contactForm) {
+    const inputs = contactForm.querySelectorAll("input");
+    const submitBtn = contactForm.querySelector(".btn-main");
+
+    submitBtn.addEventListener("click", () => {
+        let isValid = true;
+
+        inputs.forEach(input => {
+            const valid = input.type === "tel"
+                ? input.value.length === 17
+                : input.value.trim().length >= 3;
+
+            input.classList.toggle("error", !valid);
+
+            if (!valid) isValid = false;
+        });
+
+        if (!isValid) return;
+
+        document.querySelector(".thanks-modal").classList.add("active");
+        inputs.forEach(input => (input.value = ""));
+        contactForm.querySelector('.form-select__btn').classList.remove('selected');
+        contactForm.querySelector('.form-select__btn span').textContent = 'Выбор интереса';
+    });
+}
+
+const objectPriceCard = document.querySelectorAll(".object-price__card, .special-program__card");
+
+if (objectPriceCard.length) {
+    objectPriceCard.forEach(card => {
+        let btn = card.querySelector('button');
+        btn.onclick = () => {
+            card.classList.toggle('active');
+        }
+    })
+}
+
+const modernizationCards = document.querySelectorAll('.modernization-card__img');
+
+if (modernizationCards.length) {
+    modernizationCards.forEach(btn => {
+        let img = btn.querySelector('img');
+
+        btn.onclick = () => {
+            document.querySelector('.layout-modal').classList.add('active');
+            document.querySelectorAll('.layout-modal .modal-content .main-img').forEach(data => {
+                data.setAttribute('src', img.getAttribute('src'));
+            })
+        }
+    })
+}
+
+const furnitureContainer = document.querySelector('.furniture-container');
+const furnitureBtn = document.querySelector('.furniture-head button');
+
+if (furnitureContainer) {
+    furnitureBtn.onclick = () => {
+        furnitureContainer.classList.toggle('active');
+    }
+}
+
+const elementContainer = document.querySelector('.object-element__container');
+const elementBtn = document.querySelector('.object-element__head button');
+
+if (elementContainer) {
+    elementBtn.onclick = () => {
+        elementContainer.classList.toggle('active');
+    }
+}
+
+const modernizationContainer = document.querySelector('.modernization-container');
+const modernizationBtn = document.querySelector('.modernization-head button');
+
+if (modernizationContainer) {
+    modernizationBtn.onclick = () => {
+        modernizationContainer.classList.toggle('active');
+    }
+}
+
+
 
 
 
@@ -321,10 +434,18 @@ window.addEventListener('click', function (event) {
             if (!el.contains(event.target)) el.classList.remove('active');
         })
     }
-    
-    if (objectLayoutTexts.length) {
-        objectLayoutTexts.forEach(el => {
-            if (!el.contains(event.target)) el.classList.remove('active');
+
+    if (objectPriceCard.length) {
+        objectPriceCard.forEach(card => {
+            if (!card.querySelector('button').contains(event.target) && !card.querySelector('.description').contains(event.target)) {
+                card.classList.remove('active')
+            }
         })
     }
+    
+    // if (objectLayoutTexts.length) {
+    //     objectLayoutTexts.forEach(el => {
+    //         if (!el.contains(event.target)) el.classList.remove('active');
+    //     })
+    // }
 })

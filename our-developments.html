@@ -142,6 +142,84 @@
             </div>
         </section>
         <!-- Navs end -->
+
+        <!-- Modal open btn -->
+        <!-- <button class="thanks-modal__open">Click</button> -->
+        <!-- Modal open btn end -->
+        <!-- Thanks modal -->
+        <section class="modal thanks-modal">
+            <div class="modal-bg"></div>
+            <div class="container">
+                <div class="modal-content">
+                    <button class="modal-close">
+                        <img src="./assets/images/times-gray.svg" alt="">
+                    </button>
+                    <h2 class="sec-title">
+                        <span>Отправлено!</span>
+                    </h2>
+                    <p>Спасибо, мы получили ваше обращение и свяжемся в рабочее время.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Thanks modal end -->
+
+        <!-- Modal open btn -->
+        <!-- <button class="question-modal__open">Click</button> -->
+        <!-- Modal open btn end -->
+        <!-- Question modal -->
+        <section class="modal question-modal">
+            <div class="modal-bg"></div>
+            <div class="container">
+                <div class="modal-content">
+                    <img src="./assets/images/question-content-bg.png" alt="" class="bg-1">
+                    <img src="./assets/images/question-bg-2.png" alt="" class="bg-2">
+                    <img src="./assets/images/question-bg-3.png" alt="" class="bg-3">
+                    <button class="modal-close">
+                        <img src="./assets/images/times-gray.svg" alt="">
+                    </button>
+                    <h2 class="sec-title">Задать <span>вопрос</span></h2>
+                    <p>Отвечаем в течение 1 рабочего дня. Если вопрос срочный — звоните по номеру на сайте.</p>
+                    <div class="question-modal__form">
+                        <input type="text" placeholder="Ваше имя" class="form-inp">
+                        <input type="tel" placeholder="Номер телефона" class="form-inp">
+                        <input type="text" placeholder="Ваш вопрос" class="form-inp">
+                        <button class="btn-main">Связаться</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Question modal end -->
+
+        <!-- Video modal -->
+        <section class="modal video-modal">
+            <div class="modal-bg"></div>
+            <div class="modal-content">
+                <iframe
+                    id="iframeVideo"
+                    width="1014"
+                    height="570"
+                    src="https://www.youtube.com/embed/u8pgsbZBoDE?enablejsapi=1"
+                    title="hello"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+        <!-- Video modal end -->
+
+        <!-- Object layout modal -->
+        <section class="modal layout-modal">
+            <div class="modal-bg"></div>
+            <button class="modal-close">
+                <img src="./assets/images/times-white.svg" alt="">
+            </button>
+            <div class="modal-content">
+                <img src="" alt="" class="main-img">
+                <img src="" alt="" class="main-img lg">
+            </div>
+        </section>
+        <!-- Object layout modal end -->
     
         <main>
 
@@ -168,7 +246,7 @@
                         <img src="./assets/images/development-head-bg.png" alt="" class="bg-img">
                         <img src="./assets/images/development-head-bg-lg.png" alt="" class="bg-img lg">
                         <img src="./assets/images/development-head-bg-sm.png" alt="" class="bg-img sm">
-                        <h2 class="sec-title">Наши разработки</h2>
+                        <h1 class="sec-title">Наши разработки</h1>
                         <p>
                             Мы постоянно разрабатываем новые технические решения, не имеющие аналогов, на что тратиться огромное количество времени и ресурсов. <br>
                             Вы не увидите это в других домах, потому, что это наши разработки
@@ -176,72 +254,72 @@
                         <a href="#" class="btn-main">Подробнее</a>
                     </div>
                     <div class="development-content">
-                        <ul class="content-list">
-                            <li class="content-card">
-                                <div class="content-card__head">
+                        <div class="content-list">
+                            <a href="#" class="content-card">
+                                <span class="content-card__head">
                                     <img src="./assets/images/development-content-card-1.png" alt="" class="main-img">
-                                </div>
-                                <div class="content-card__body">
-                                    <p>Умный дом от RSG</p>
-                                </div>
-                            </li>
-                            <li class="content-card">
-                                <div class="content-card__head">
+                                </span>
+                                <span class="content-card__body">
+                                    <span>Умный дом от RSG</span>
+                                </span>
+                            </a>
+                            <a href="#" class="content-card">
+                                <span class="content-card__head">
                                     <img src="./assets/images/development-content-card-2.png" alt="" class="main-img">
-                                </div>
-                                <div class="content-card__body">
-                                    <p>Пакет роботизированной уборки для коттеджей</p>
-                                </div>
-                            </li>
-                            <li class="content-card">
-                                <div class="content-card__head">
+                                </span>
+                                <span class="content-card__body">
+                                    <span>Пакет роботизированной уборки для коттеджей</span>
+                                </span>
+                            </a>
+                            <a href="#" class="content-card">
+                                <span class="content-card__head">
                                     <img src="./assets/images/development-content-card-3.png" alt="" class="main-img">
-                                </div>
-                                <div class="content-card__body">
-                                    <p>Портальный и фронтальный камины</p>
-                                </div>
-                            </li>
-                            <li class="content-card">
-                                <div class="content-card__head">
+                                </span>
+                                <span class="content-card__body">
+                                    <span>Портальный и фронтальный камины</span>
+                                </span>
+                            </a>
+                            <a href="#" class="content-card">
+                                <span class="content-card__head">
                                     <img src="./assets/images/development-content-card-4.png" alt="" class="main-img">
-                                </div>
-                                <div class="content-card__body">
-                                    <p>Система управления водоснабжением загородного дома</p>
-                                </div>
-                            </li>
-                            <li class="content-card">
-                                <div class="content-card__head">
+                                </span>
+                                <span class="content-card__body">
+                                    <span>Система управления водоснабжением загородного дома</span>
+                                </span>
+                            </a>
+                            <a href="#" class="content-card">
+                                <span class="content-card__head">
                                     <img src="./assets/images/development-content-card-5.png" alt="" class="main-img">
-                                </div>
-                                <div class="content-card__body">
-                                    <p>Зубы улитки</p>
-                                </div>
-                            </li>
-                            <li class="content-card">
-                                <div class="content-card__head">
+                                </span>
+                                <span class="content-card__body">
+                                    <span>Зубы улитки</span>
+                                </span>
+                            </a>
+                            <a href="#" class="content-card">
+                                <span class="content-card__head">
                                     <img src="./assets/images/development-content-card-6.png" alt="" class="main-img">
-                                </div>
-                                <div class="content-card__body">
-                                    <p>Ночная подсветка дома</p>
-                                </div>
-                            </li>
-                            <li class="content-card">
-                                <div class="content-card__head">
+                                </span>
+                                <span class="content-card__body">
+                                    <span>Ночная подсветка дома</span>
+                                </span>
+                            </a>
+                            <a href="#" class="content-card">
+                                <span class="content-card__head">
                                     <img src="./assets/images/development-content-card-7.png" alt="" class="main-img">
-                                </div>
-                                <div class="content-card__body">
-                                    <p>Водонагреватель для гигиенического душа</p>
-                                </div>
-                            </li>
-                            <li class="content-card">
-                                <div class="content-card__head">
+                                </span>
+                                <span class="content-card__body">
+                                    <span>Водонагреватель для гигиенического душа</span>
+                                </span>
+                            </a>
+                            <a href="#" class="content-card">
+                                <span class="content-card__head">
                                     <img src="./assets/images/development-content-card-8.png" alt="" class="main-img">
-                                </div>
-                                <div class="content-card__body">
-                                    <p>Система безключевого доступа в дом</p>
-                                </div>
-                            </li>
-                        </ul>
+                                </span>
+                                <span class="content-card__body">
+                                    <span>Система безключевого доступа в дом</span>
+                                </span>
+                            </a>
+                        </div>
                         <ul class="descriptions">
                             <li>Также нами разработаны и применяется масса дизайнерских и архитектурных решений фотографии и видеообзоры которых, в достаточном количестве, имеются в описании проектов и по каждому реализованному нами проекту.  </li>
                         </ul>

@@ -211,3 +211,41 @@
         background: black;
     }
 }
+
+.layout-modal {
+    .modal-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+    }
+
+    .modal-content {
+        display: flex;
+        width: auto;
+    }
+    
+    .main-img {
+        height: 90svh;
+        max-width: 90vw;
+        width: auto;
+        object-fit: contain;
+
+        @include media(992) {
+            display: none;
+        }
+
+        &.lg {
+            display: none;
+
+            @include media(992) {
+                display: block;
+            }
+        }
+    }
+}

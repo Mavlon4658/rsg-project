@@ -142,6 +142,84 @@
             </div>
         </section>
         <!-- Navs end -->
+
+        <!-- Modal open btn -->
+        <!-- <button class="thanks-modal__open">Click</button> -->
+        <!-- Modal open btn end -->
+        <!-- Thanks modal -->
+        <section class="modal thanks-modal">
+            <div class="modal-bg"></div>
+            <div class="container">
+                <div class="modal-content">
+                    <button class="modal-close">
+                        <img src="./assets/images/times-gray.svg" alt="">
+                    </button>
+                    <h2 class="sec-title">
+                        <span>Отправлено!</span>
+                    </h2>
+                    <p>Спасибо, мы получили ваше обращение и свяжемся в рабочее время.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Thanks modal end -->
+
+        <!-- Modal open btn -->
+        <!-- <button class="question-modal__open">Click</button> -->
+        <!-- Modal open btn end -->
+        <!-- Question modal -->
+        <section class="modal question-modal">
+            <div class="modal-bg"></div>
+            <div class="container">
+                <div class="modal-content">
+                    <img src="./assets/images/question-content-bg.png" alt="" class="bg-1">
+                    <img src="./assets/images/question-bg-2.png" alt="" class="bg-2">
+                    <img src="./assets/images/question-bg-3.png" alt="" class="bg-3">
+                    <button class="modal-close">
+                        <img src="./assets/images/times-gray.svg" alt="">
+                    </button>
+                    <h2 class="sec-title">Задать <span>вопрос</span></h2>
+                    <p>Отвечаем в течение 1 рабочего дня. Если вопрос срочный — звоните по номеру на сайте.</p>
+                    <div class="question-modal__form">
+                        <input type="text" placeholder="Ваше имя" class="form-inp">
+                        <input type="tel" placeholder="Номер телефона" class="form-inp">
+                        <input type="text" placeholder="Ваш вопрос" class="form-inp">
+                        <button class="btn-main">Связаться</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Question modal end -->
+
+        <!-- Video modal -->
+        <section class="modal video-modal">
+            <div class="modal-bg"></div>
+            <div class="modal-content">
+                <iframe
+                    id="iframeVideo"
+                    width="1014"
+                    height="570"
+                    src="https://www.youtube.com/embed/u8pgsbZBoDE?enablejsapi=1"
+                    title="hello"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+        <!-- Video modal end -->
+
+        <!-- Object layout modal -->
+        <section class="modal layout-modal">
+            <div class="modal-bg"></div>
+            <button class="modal-close">
+                <img src="./assets/images/times-white.svg" alt="">
+            </button>
+            <div class="modal-content">
+                <img src="" alt="" class="main-img">
+                <img src="" alt="" class="main-img lg">
+            </div>
+        </section>
+        <!-- Object layout modal end -->
     
         <main>
 
@@ -176,7 +254,7 @@
                             <img src="./assets/images/object-home-card.png" alt="">
                         </div>
                         <div class="object-home__right">
-                            <div class="title">Коттедж 96 кв 6.3 сотки</div>
+                            <h1 class="title">Коттедж 96 кв 6.3 сотки</h1>
                             <div class="text-bottom">
                                 <div class="price-text">
                                     <span>Стоимость</span>
@@ -189,7 +267,7 @@
                             </div>
                         </div>
                         <div class="object-home__text">
-                            <div class="title">Коттедж 96 кв 6.3 сотки</div>
+                            <h2 class="title">Коттедж 96 кв 6.3 сотки</h2>
                             <div class="text-content">
                                 <h3>Основные параметры</h3>
                                 <ul>
@@ -361,8 +439,8 @@
                                 <div class="video-card">
                                     <div class="video-card__head">
                                         <img src="./assets/images/video-card-1.png" alt="" class="main-img">
-                                        <button class="play-btn">
-                                            <img src="./assets/images/play-icon.png" alt="">
+                                        <button class="play-btn video-modal__open">
+                                            <img src="./assets/images/play-icon-orange.svg" alt="">
                                         </button>
                                     </div>
                                     <h3>Заголовок</h3>
@@ -370,8 +448,8 @@
                                 <div class="video-card">
                                     <div class="video-card__head">
                                         <img src="./assets/images/video-card-2.png" alt="" class="main-img">
-                                        <button class="play-btn">
-                                            <img src="./assets/images/play-icon.png" alt="">
+                                        <button class="play-btn video-modal__open">
+                                            <img src="./assets/images/play-icon-orange.svg" alt="">
                                         </button>
                                     </div>
                                     <h3>Заголовок</h3>
@@ -379,8 +457,8 @@
                                 <div class="video-card">
                                     <div class="video-card__head">
                                         <img src="./assets/images/video-card-3.png" alt="" class="main-img">
-                                        <button class="play-btn">
-                                            <img src="./assets/images/play-icon.png" alt="">
+                                        <button class="play-btn video-modal__open">
+                                            <img src="./assets/images/play-icon-orange.svg" alt="">
                                         </button>
                                     </div>
                                     <h3>Заголовок</h3>
@@ -634,7 +712,7 @@
                             <img src="./assets/images/object-characteristic-card-bg-lg.png" alt="" class="bg-img lg">
                             <h3>Хотите что-то уточнить?</h3>
                             <p>Оставьте заявку и наши менеджеры ответят на Ваши вопросы</p>
-                            <a href="#" class="btn-main">Связаться</a>
+                            <button class="btn-main question-modal__open">Связаться</button>
                         </div>
                     </div>
                 </div>
@@ -665,10 +743,12 @@
 
             <!-- Furniture -->
             <section class="furniture">
-                <div class="container furniture-container">
+                <div class="container furniture-container active">
                     <div class="furniture-head">
                         <h2 class="sec-title">Мебелировка</h2>
-                        <img src="./assets/images/minus-icon.svg" alt="">
+                        <button>
+                            <img src="./assets/images/minus-icon.svg" alt="">
+                        </button>
                     </div>
                     <div class="furniture-content">
                         <ul>
@@ -756,28 +836,40 @@
                         <div class="object-price__card">
                             <div class="object-price__card-text">
                                 <p>Участок 7.5 соток, огороженный, с автоматическими воротами, стоянкой, дорожками и зоной для барбекю. </p>
-                                <a href="#">Подробнее</a>
+                                <button>Подробнее</button>
+                                <div class="description">
+                                    <div class="description-text">Следует отметить, что перспективное планирование способствует подготовке и реализации соответствующих условий активизации!</div>
+                                </div>
                             </div>
                             <img src="./assets/images/object-price-card-1.png" alt="">
                         </div>
                         <div class="object-price__card">
                             <div class="object-price__card-text">
                                 <p>Коттедж проекта  <a href="#">Удача-10.3</a> площадью 130 кв.м. с полной отделкой и полной <a href="#">меблировкой</a> (в соответствии с перечнем выше в разделе "Меблировка").</p>
-                                <a href="#">Подробнее</a>
+                                <button>Подробнее</button>
+                                <div class="description">
+                                    <div class="description-text">Следует отметить, что перспективное планирование способствует подготовке и реализации соответствующих условий активизации!</div>
+                                </div>
                             </div>
                             <img src="./assets/images/object-price-card-2.png" alt="">
                         </div>
                         <div class="object-price__card">
                             <div class="object-price__card-text">
                                 <p>Навес под два автомобиля площадью 35 кв.м.</p>
-                                <a href="#">Подробнее</a>
+                                <button>Подробнее</button>
+                                <div class="description">
+                                    <div class="description-text">Следует отметить, что перспективное планирование способствует подготовке и реализации соответствующих условий активизации!</div>
+                                </div>
                             </div>
                             <img src="./assets/images/object-price-card-3.png" alt="">
                         </div>
                         <div class="object-price__card">
                             <div class="object-price__card-text">
                                 <p>Все работающие коммуникации: отопление, водоснабжение, канализация, электричество.</p>
-                                <a href="#">Подробнее</a>
+                                <button>Подробнее</button>
+                                <div class="description">
+                                    <div class="description-text">Следует отметить, что перспективное планирование способствует подготовке и реализации соответствующих условий активизации!</div>
+                                </div>
                             </div>
                             <img src="./assets/images/object-price-card-4.png" alt="">
                         </div>
@@ -788,10 +880,12 @@
 
             <!-- Object element -->
             <section class="object-element">
-                <div class="container object-element__container">
+                <div class="container object-element__container active">
                     <div class="object-element__head">
                         <h2 class="sec-title">Дополнительные элементы</h2>
-                        <img src="./assets/images/minus-icon.svg" alt="">
+                        <button>
+                            <img src="./assets/images/minus-icon.svg" alt="">
+                        </button>
                     </div>
                     <div class="object-element__text">
                         <h4>Дополнительные элементы, которые можно реализовать или реализованы в данном коттедже:</h4>
@@ -849,7 +943,7 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="#" class="more-title">Показать все</a>
+                    <a href="#" class="more-text">Показать все</a>
                 </div>
             </section>
             <!-- Object element end -->
@@ -863,12 +957,15 @@
                             <div class="special-program__card">
                                 <h3>Гарантия</h3>
                                 <p>На все коттеджи предоставляется гарантия.</p>
-                                <a href="#">Подробнее</a>
+                                <button>Подробнее</button>
+                                <div class="description">
+                                    <div class="description-text">Следует отметить, что перспективное планирование способствует подготовке и реализации соответствующих условий активизации!</div>
+                                </div>
                             </div>
                             <div class="special-program__video">
                                 <img src="./assets/images/special-program-video-bg.png" alt="" class="bg-img">
                                 <img src="./assets/images/special-program-video-bg-sm.png" alt="" class="bg-img sm">
-                                <button class="play-btn">
+                                <button class="play-btn video-modal__open">
                                     <img src="./assets/images/play-icon-orange.svg" alt="">
                                 </button>
                                 <p>Видео об ипотеке без первоначального взноса и аренде с правом выкупа</p>
@@ -879,28 +976,40 @@
                                 <h3>Сопровождение</h3>
                                 <div class="special-program__card-body">
                                     <p>2 года поддержки по любым вопросам загородной жизни (с выездом специалиста) + информационная система RSG с подсказками на месте. Убираем страхи перед жизнью в своём доме.</p>
-                                    <a href="#">Подробнее</a>
+                                    <button>Подробнее</button>
+                                <div class="description">
+                                    <div class="description-text">Следует отметить, что перспективное планирование способствует подготовке и реализации соответствующих условий активизации!</div>
+                                </div>
                                 </div>
                             </div>
                             <div class="special-program__card">
                                 <h3>Аренда с возможностью выкупа</h3>
                                 <div class="special-program__card-body">
                                     <p>Аренда от 80–100 тыс. ₽/мес. 50% платежей идёт в зачёт стоимости. Срок — 11 месяцев, затем можно выкупить дом.</p>
-                                    <a href="#">Подробнее</a>
+                                    <button>Подробнее</button>
+                                <div class="description">
+                                    <div class="description-text">Следует отметить, что перспективное планирование способствует подготовке и реализации соответствующих условий активизации!</div>
+                                </div>
                                 </div>
                             </div>
                             <div class="special-program__card">
                                 <h3>Обмен на квартиру</h3>
                                 <div class="special-program__card-body">
                                     <p>Обмен с доплатой в любую сторону. Запасной вариант, если не продали свою квартиру сами. Гарантируем честную оценку</p>
-                                    <a href="#">Подробнее</a>
+                                    <button>Подробнее</button>
+                                <div class="description">
+                                    <div class="description-text">Следует отметить, что перспективное планирование способствует подготовке и реализации соответствующих условий активизации!</div>
+                                </div>
                                 </div>
                             </div>
                             <div class="special-program__card">
                                 <h3>Семейная ипотека</h3>
                                 <div class="special-program__card-body">
                                     <p>Ставка 6% годовых. Стоимость дома возрастает из‑за оформления. Нужен спецпакет документов от нас — сообщите заранее. Ипотекой занимается наш брокер.</p>
-                                    <a href="#">Подробнее</a>
+                                    <button>Подробнее</button>
+                                <div class="description">
+                                    <div class="description-text">Следует отметить, что перспективное планирование способствует подготовке и реализации соответствующих условий активизации!</div>
+                                </div>
                                 </div>
                             </div>
                         </div>

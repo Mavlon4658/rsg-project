@@ -5146,13 +5146,13 @@ button, input, textarea, li, div {
     padding-bottom: 23px;
   }
 }
-.article-card h3 {
+.article-card__title {
   font-weight: 500;
   font-size: 24px;
   max-width: 320px;
 }
 @media screen and (max-width: 992px) {
-  .article-card h3 {
+  .article-card__title {
     font-size: 22px;
   }
 }

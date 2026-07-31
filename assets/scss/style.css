@@ -5284,7 +5284,7 @@ button, input, textarea, li, div {
 .article-page__navs button.swiper-button-disabled {
   display: none !important;
 }
-.article-page__navs h3 {
+.article-page__navs h3, .article-page__navs p {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -5295,7 +5295,7 @@ button, input, textarea, li, div {
   margin-bottom: -4px;
 }
 @media screen and (max-width: 992px) {
-  .article-page__navs h3 {
+  .article-page__navs h3, .article-page__navs p {
     width: 100%;
     padding: 12px 8px;
     border: 1px solid #f3f3f3;
@@ -5305,12 +5305,12 @@ button, input, textarea, li, div {
     margin: 0;
   }
 }
-.article-page__navs h3 span {
+.article-page__navs h3 span, .article-page__navs p span {
   font-weight: 500;
   color: #a9a9a9;
 }
 @media screen and (max-width: 992px) {
-  .article-page__navs h3 span {
+  .article-page__navs h3 span, .article-page__navs p span {
     display: none;
   }
 }

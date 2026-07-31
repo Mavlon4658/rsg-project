@@ -7782,20 +7782,20 @@ button, input, textarea, li, div {
   align-items: center;
   justify-content: space-between;
 }
-.search-result .result-card__head h3 {
+.search-result .result-card__head .title {
   font-weight: 500;
   font-size: 22px;
   line-height: 18px;
   color: #f4925e;
 }
 @media screen and (max-width: 992px) {
-  .search-result .result-card__head h3 {
+  .search-result .result-card__head .title {
     font-size: 18px;
     line-height: 13px;
   }
 }
 @media screen and (max-width: 700px) {
-  .search-result .result-card__head h3 {
+  .search-result .result-card__head .title {
     line-height: inherit;
   }
 }

@@ -5934,20 +5934,20 @@ button, input, textarea, li, div {
 .information-card:nth-child(2n-1) {
   background: #f3f3f3;
 }
-.information-card h3 {
+.information-card__title {
   font-family: "Coolvetica Condensed", sans-serif;
   font-size: 53px;
   line-height: 35px;
   margin-bottom: 30px;
 }
 @media screen and (max-width: 992px) {
-  .information-card h3 {
+  .information-card__title {
     font-size: 46px;
     line-height: 109%;
   }
 }
 @media screen and (max-width: 700px) {
-  .information-card h3 {
+  .information-card__title {
     font-size: 40px;
     line-height: 125%;
   }

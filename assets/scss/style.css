@@ -4012,14 +4012,14 @@ button, input, textarea, li, div {
 .object-element__text {
   width: 100%;
 }
-.object-element__text h4 {
+.object-element__text .subtitle {
   font-weight: 500;
   font-size: 22px;
   line-height: 16px;
   margin-bottom: 20px;
 }
 @media screen and (max-width: 992px) {
-  .object-element__text h4 {
+  .object-element__text .subtitle {
     font-size: 18px;
     line-height: 17.5px;
   }

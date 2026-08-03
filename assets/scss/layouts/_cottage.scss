@@ -531,13 +531,24 @@
             }
         }
 
-        p {
+        ul {
+            display: flex;
+            flex-direction: column;
+
+            gap: 16px;
+        }
+
+        li {
             font-size: 18px;
             line-height: 133%;
 
             @include media(992) {
                 font-size: 15px;
                 line-height: 147%;
+            }
+            
+            &:not(:first-child) {
+                display: none;
             }
 
             a {
@@ -557,6 +568,24 @@
 
             @include media(700) {
                 width: 100%;
+            }
+
+            span:nth-child(2) {
+                display: none;
+            }
+        }
+
+        &.active {
+            li {
+                display: block;
+            }
+
+            .btn-main span {
+                display: none;
+
+                &:nth-child(2) {
+                    display: block;
+                }
             }
         }
     }

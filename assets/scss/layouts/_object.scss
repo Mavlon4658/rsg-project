@@ -429,13 +429,13 @@
                 text-decoration: underline;
             }
         }
-
+        
         &-btn:hover {
             font-weight: 600;
             color: #F4925E;
         }
 
-        &-btn:hover ~ .object-layout__text-content  {
+        &.active .object-layout__text-content {
             display: block;
         }
     }

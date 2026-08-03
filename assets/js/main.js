@@ -90,6 +90,89 @@ const cottageSwp = new Swiper('.cottage-swp', {
     }
 })
 
+const cottageSwpBtns = document.querySelectorAll('.cottage .cottage-swp button');
+
+if (cottageSwpBtns.length) {
+    cottageSwpBtns.forEach(btn => {
+        btn.onclick = () => {
+            cottageSwpBtns.forEach(el => {
+                if (el == btn) {
+                    el.classList.add('active');
+                } else {
+                    el.classList.remove('active');
+                }
+            })
+        }
+    })
+}
+
+const articleHeadBtns = document.querySelectorAll('.article .article-head button');
+
+if (articleHeadBtns.length) {
+    articleHeadBtns.forEach(btn => {
+        btn.onclick = () => {
+            articleHeadBtns.forEach(el => {
+                if (el == btn) {
+                    el.classList.add('active');
+                } else {
+                    el.classList.remove('active');
+                }
+            })
+        }
+    })
+}
+
+const informationTabBtns = document.querySelectorAll('.information .tab-btn a');
+
+if (informationTabBtns.length) {
+    informationTabBtns.forEach(btn => {
+        btn.onclick = e => {
+            e.preventDefault();
+            informationTabBtns.forEach(el => {
+                if (el == btn) {
+                    el.classList.add('active');
+                } else {
+                    el.classList.remove('active');
+                }
+            })
+        }
+    })
+}
+
+const videoReviewBtns = document.querySelectorAll('.video-review__navs a');
+
+if (videoReviewBtns.length) {
+    videoReviewBtns.forEach(btn => {
+        btn.onclick = e => {
+            e.preventDefault();
+            videoReviewBtns.forEach(el => {
+                if (el == btn) {
+                    el.classList.add('active');
+                } else {
+                    el.classList.remove('active');
+                }
+            })
+        }
+    })
+}
+
+const resultBtns = document.querySelectorAll('.result-btns a');
+
+if (resultBtns.length) {
+    resultBtns.forEach(btn => {
+        btn.onclick = e => {
+            e.preventDefault();
+            resultBtns.forEach(el => {
+                if (el == btn) {
+                    el.classList.add('active');
+                } else {
+                    el.classList.remove('active');
+                }
+            })
+        }
+    })
+}
+
 const galleryTabBtns = document.querySelectorAll('.gallery .tab-btn button');
 const galleryContentItems = document.querySelectorAll('.gallery-content__item');
 
@@ -114,23 +197,23 @@ if (galleryContentItems.length) {
     })
 }
 
-// const objectLayoutTexts = document.querySelectorAll('.object-layout__text');
+const objectLayoutTexts = document.querySelectorAll('.object-layout__text');
 
-// if (objectLayoutTexts.length) {
-//     objectLayoutTexts.forEach(item => {
-//         const btn = item.querySelector('.object-layout__text-btn');
+if (objectLayoutTexts.length) {
+    objectLayoutTexts.forEach(item => {
+        const btn = item.querySelector('.object-layout__text-btn');
 
-//         btn.onclick = () => {
-//             objectLayoutTexts.forEach(el => {
-//                 if (el == item) {
-//                     el.classList.add('active');
-//                 } else {
-//                     el.classList.remove('active');
-//                 }
-//             })
-//         }
-//     })
-// }
+        btn.onclick = () => {
+            objectLayoutTexts.forEach(el => {
+                if (el == item) {
+                    el.classList.add('active');
+                } else {
+                    el.classList.remove('active');
+                }
+            })
+        }
+    })
+}
 
 const objectLayoutTabBtns = document.querySelectorAll('.object-layout .tab-btn button');
 const objectLayoutContentItem = document.querySelectorAll('.object-layout__content-item');
@@ -417,6 +500,15 @@ if (modernizationContainer) {
     }
 }
 
+const cottageHomeContent = document.querySelector('.cottage-home__content');
+const cottagehomeContentBtn = document.querySelector('.cottage-home__content .btn-main');
+
+if (cottageHomeContent) {
+    cottagehomeContentBtn.onclick = () => {
+        cottageHomeContent.classList.toggle('active');
+    }
+}
+
 
 
 
@@ -443,9 +535,9 @@ window.addEventListener('click', function (event) {
         })
     }
     
-    // if (objectLayoutTexts.length) {
-    //     objectLayoutTexts.forEach(el => {
-    //         if (!el.contains(event.target)) el.classList.remove('active');
-    //     })
-    // }
+    if (objectLayoutTexts.length) {
+        objectLayoutTexts.forEach(el => {
+            if (!el.contains(event.target)) el.classList.remove('active');
+        })
+    }
 })

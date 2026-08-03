@@ -1399,17 +1399,25 @@ button, input, textarea, li, div {
     font-size: 18px;
   }
 }
-.cottage-home__content p {
+.cottage-home__content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.cottage-home__content li {
   font-size: 18px;
   line-height: 133%;
 }
 @media screen and (max-width: 992px) {
-  .cottage-home__content p {
+  .cottage-home__content li {
     font-size: 15px;
     line-height: 147%;
   }
 }
-.cottage-home__content p a {
+.cottage-home__content li:not(:first-child) {
+  display: none;
+}
+.cottage-home__content li a {
   display: inline;
   text-decoration: underline;
   -webkit-text-decoration-skip-ink: none;
@@ -1428,6 +1436,18 @@ button, input, textarea, li, div {
   .cottage-home__content .btn-main {
     width: 100%;
   }
+}
+.cottage-home__content .btn-main span:nth-child(2) {
+  display: none;
+}
+.cottage-home__content.active li {
+  display: block;
+}
+.cottage-home__content.active .btn-main span {
+  display: none;
+}
+.cottage-home__content.active .btn-main span:nth-child(2) {
+  display: block;
 }
 
 .cottage-plan {
@@ -3554,7 +3574,7 @@ button, input, textarea, li, div {
   font-weight: 600;
   color: #F4925E;
 }
-.object-layout__text-btn:hover ~ .object-layout__text-content {
+.object-layout__text.active .object-layout__text-content {
   display: block;
 }
 .object-layout__content {

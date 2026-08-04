@@ -101,6 +101,12 @@
             grid-template-columns: repeat(1, 1fr);
             gap: 32px;
         }
+
+        &:not(.active) {
+            .cottage-card:nth-child(n+10) {
+                display: none;
+            }
+        }
     }
 
     &-card {
@@ -408,6 +414,22 @@
             @include media(700) {
                 width: 100%;
             }
+
+            span {
+                display: inline;
+
+                &:nth-child(2) {
+                    display: none;
+                }
+            }
+
+            &.active span {
+                display: none;
+
+                &:nth-child(2) {
+                    display: inline;
+                }
+            }
         }
     }
 
@@ -421,6 +443,24 @@
             flex-direction: column;
             margin-top: 32px;
             gap: 20px;
+        }
+
+        .show-btn {
+            span {
+                display: inline;
+    
+                &:nth-child(2) {
+                    display: none;
+                }
+            }
+    
+            &.active span {
+                display: none;
+    
+                &:nth-child(2) {
+                    display: inline;
+                }
+            }
         }
     }
 
@@ -438,6 +478,10 @@
                 @include media(992) {
                     margin: 20px 0 32px;
                 }
+            }
+
+            &-list:not(.active) .cottage-card:nth-child(n+7) {
+                display: none;
             }
         }
     }
@@ -460,6 +504,10 @@
 
         .cottage-list {
             width: 100%;
+
+            &:not(.active) .cottage-card:nth-child(n+4) {
+                display: none;
+            }
         }
 
         .btn-main {
@@ -467,6 +515,24 @@
 
             @include media(992) {
                 width: 100%;
+            }
+        }
+
+        .show-btn {
+            span {
+                display: inline;
+    
+                &:nth-child(2) {
+                    display: none;
+                }
+            }
+    
+            &.active span {
+                display: none;
+    
+                &:nth-child(2) {
+                    display: inline;
+                }
             }
         }
     }

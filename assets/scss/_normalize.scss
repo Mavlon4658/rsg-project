@@ -50,6 +50,10 @@ address {
     min-height: 100svh;
 }
 
+iframe {
+    border: 0;
+}
+
 ul, ol, dl {
     list-style: none;
     padding: 0;

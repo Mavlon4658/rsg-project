@@ -89,6 +89,10 @@
         @include media(700) {
             grid-template-columns: repeat(1, 1fr);
         }
+
+        &:not(.active) .article-card:nth-child(n+45) {
+            display: none;
+        }
     }
 
     &-card {
@@ -133,6 +137,24 @@
                 font-size: 15px;
                 line-height: 11px;
                 color: #a9a9a9;
+            }
+        }
+    }
+
+    .show-btn {
+        span {
+            display: inline;
+
+            &:nth-child(2) {
+                display: none;
+            }
+        }
+
+        &.active span {
+            display: none;
+
+            &:nth-child(2) {
+                display: inline;
             }
         }
     }

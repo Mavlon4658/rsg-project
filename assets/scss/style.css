@@ -50,6 +50,10 @@ address {
   min-height: 100svh;
 }
 
+iframe {
+  border: 0;
+}
+
 ul, ol, dl {
   list-style: none;
   padding: 0;
@@ -1017,6 +1021,9 @@ button, input, textarea, li, div {
     gap: 32px;
   }
 }
+.cottage-list:not(.active) .cottage-card:nth-child(n+10) {
+  display: none;
+}
 @media screen and (max-width: 700px) {
   .cottage-card:nth-child(n+6) {
     display: none;
@@ -1286,6 +1293,18 @@ button, input, textarea, li, div {
     width: 100%;
   }
 }
+.cottage .more-btn .btn-main span {
+  display: inline;
+}
+.cottage .more-btn .btn-main span:nth-child(2) {
+  display: none;
+}
+.cottage .more-btn .btn-main.active span {
+  display: none;
+}
+.cottage .more-btn .btn-main.active span:nth-child(2) {
+  display: inline;
+}
 .cottage-foot {
   display: flex;
   align-items: center;
@@ -1298,6 +1317,18 @@ button, input, textarea, li, div {
     margin-top: 32px;
     gap: 20px;
   }
+}
+.cottage-foot .show-btn span {
+  display: inline;
+}
+.cottage-foot .show-btn span:nth-child(2) {
+  display: none;
+}
+.cottage-foot .show-btn.active span {
+  display: none;
+}
+.cottage-foot .show-btn.active span:nth-child(2) {
+  display: inline;
 }
 .cottage.catalog-cottage {
   padding: 0 0 120px;
@@ -1314,6 +1345,9 @@ button, input, textarea, li, div {
   .cottage.catalog-cottage .cottage-swp {
     margin: 20px 0 32px;
   }
+}
+.cottage.catalog-cottage .cottage-list:not(.active) .cottage-card:nth-child(n+7) {
+  display: none;
 }
 .cottage.complated-cottage .sec-title {
   width: 100%;
@@ -1332,6 +1366,9 @@ button, input, textarea, li, div {
 .cottage.complated-cottage .cottage-list {
   width: 100%;
 }
+.cottage.complated-cottage .cottage-list:not(.active) .cottage-card:nth-child(n+4) {
+  display: none;
+}
 .cottage.complated-cottage .btn-main {
   width: 187px;
 }
@@ -1339,6 +1376,18 @@ button, input, textarea, li, div {
   .cottage.complated-cottage .btn-main {
     width: 100%;
   }
+}
+.cottage.complated-cottage .show-btn span {
+  display: inline;
+}
+.cottage.complated-cottage .show-btn span:nth-child(2) {
+  display: none;
+}
+.cottage.complated-cottage .show-btn.active span {
+  display: none;
+}
+.cottage.complated-cottage .show-btn.active span:nth-child(2) {
+  display: inline;
 }
 
 .cottage-home .main-img {
@@ -1632,6 +1681,9 @@ button, input, textarea, li, div {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+.ownership-list:not(.active) .ownership-card:nth-child(n+7) {
+  display: none;
+}
 .ownership-card__head {
   display: flex;
   width: 100%;
@@ -1681,6 +1733,18 @@ button, input, textarea, li, div {
   .ownership .more-link .btn-main {
     width: 100%;
   }
+}
+.ownership .more-link .btn-main span {
+  display: inline;
+}
+.ownership .more-link .btn-main span:nth-child(2) {
+  display: none;
+}
+.ownership .more-link .btn-main.active span {
+  display: none;
+}
+.ownership .more-link .btn-main.active span:nth-child(2) {
+  display: inline;
 }
 
 .support {
@@ -4144,11 +4208,29 @@ button, input, textarea, li, div {
 .object-element .text-list__item-right.text-blue {
   color: #579FD4;
 }
+.object-element .text-list:not(.active) .text-list__item:nth-child(7) {
+  border-bottom: 0;
+}
+.object-element .text-list:not(.active) .text-list__item:nth-child(n+8) {
+  display: none;
+}
 .object-element .more-text {
   font-size: 16px;
   line-height: 12px;
   color: #f4925e;
   text-decoration: underline;
+}
+.object-element .more-text span {
+  display: inline;
+}
+.object-element .more-text span:nth-child(2) {
+  display: none;
+}
+.object-element .more-text.active span {
+  display: none;
+}
+.object-element .more-text.active span:nth-child(2) {
+  display: inline;
 }
 
 .object-expenses {
@@ -4369,6 +4451,21 @@ button, input, textarea, li, div {
 .object-cottage .cottage-list {
   margin-bottom: 32px;
 }
+.object-cottage .cottage-list:not(.active) .cottage-card:nth-child(n+4) {
+  display: none;
+}
+.object-cottage .show-btn span {
+  display: inline;
+}
+.object-cottage .show-btn span:nth-child(2) {
+  display: none;
+}
+.object-cottage .show-btn.active span {
+  display: none;
+}
+.object-cottage .show-btn.active span:nth-child(2) {
+  display: inline;
+}
 
 .gallery {
   padding-top: 120px;
@@ -4450,6 +4547,27 @@ button, input, textarea, li, div {
   .gallery-content__item .btn-main {
     width: 100%;
   }
+}
+.gallery-content__item .btn-main span {
+  display: none;
+}
+.gallery-content__item .btn-main span:nth-child(2) {
+  display: inline;
+}
+.gallery-content__item:not(.show) .gallery-card:nth-child(n+16) {
+  display: none;
+}
+.gallery-content__item:not(.show) .btn-main span {
+  display: inline;
+}
+.gallery-content__item:not(.show) .btn-main span:nth-child(2) {
+  display: none;
+}
+.gallery-content__item:not(.show) .video-card:nth-child(n+4) {
+  display: none;
+}
+.gallery-content__item:nth-child(3):not(.show) .gallery-card:nth-child(n+7) {
+  display: none;
 }
 .gallery-list {
   display: grid;
@@ -5151,6 +5269,9 @@ button, input, textarea, li, div {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+.article-list:not(.active) .article-card:nth-child(n+45) {
+  display: none;
+}
 .article-card {
   border: 1px solid #f3f3f3;
   border-radius: 12px;
@@ -5193,6 +5314,18 @@ button, input, textarea, li, div {
   font-size: 15px;
   line-height: 11px;
   color: #a9a9a9;
+}
+.article .show-btn span {
+  display: inline;
+}
+.article .show-btn span:nth-child(2) {
+  display: none;
+}
+.article .show-btn.active span {
+  display: none;
+}
+.article .show-btn.active span:nth-child(2) {
+  display: inline;
 }
 
 @media screen and (max-width: 992px) {
@@ -7048,7 +7181,7 @@ button, input, textarea, li, div {
   flex-direction: column;
   align-items: flex-start;
 }
-.development-content .content-card__body span {
+.development-content .content-card__body span, .development-content .content-card__body h3 {
   font-weight: 500;
   font-size: 18px;
 }

@@ -69,6 +69,10 @@
         @include media(700) {
             grid-template-columns: repeat(1, 1fr);
         }
+
+        &:not(.active) .ownership-card:nth-child(n+7) {
+            display: none;
+        }
     }
 
     &-card {
@@ -123,6 +127,22 @@
         .btn-main {
             @include media(992) {
                 width: 100%;
+            }
+
+            span {
+                display: inline;
+
+                &:nth-child(2) {
+                    display: none;
+                }
+            }
+
+            &.active span {
+                display: none;
+
+                &:nth-child(2) {
+                    display: inline;
+                }
             }
         }
     }

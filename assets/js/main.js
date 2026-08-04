@@ -195,6 +195,15 @@ if (galleryContentItems.length) {
             })
         }
     })
+
+    galleryContentItems.forEach(el => {
+        let showBtn = el.querySelector('.btn-main');
+
+        showBtn.onclick = e => {
+            e.preventDefault();
+            el.classList.toggle('show')
+        }
+    })
 }
 
 const objectLayoutTexts = document.querySelectorAll('.object-layout__text');
@@ -250,6 +259,15 @@ if (objectLayoutContentItem.length) {
                 img.setAttribute('src', mainImgs[imgIdx].getAttribute('src'));
             })
         }
+        
+        mainImgs.forEach(data => {
+            data.onclick = () => {
+                document.querySelector('.layout-modal').classList.add('active');
+                document.querySelectorAll('.layout-modal .modal-content .main-img').forEach((img, imgIdx) => {
+                    img.setAttribute('src', mainImgs[imgIdx].getAttribute('src'));
+                })
+            }
+        })
     })
 }
 
@@ -447,6 +465,37 @@ if (contactForm) {
     });
 }
 
+const questionForm = document.querySelector(".question-modal__form");
+
+if (questionForm) {
+    const inputs = questionForm.querySelectorAll("input");
+    const submitBtn = questionForm.querySelector(".btn-main");
+
+    submitBtn.addEventListener("click", () => {
+        let isValid = true;
+
+        inputs.forEach(input => {
+            const valid = input.type === "tel"
+                ? input.value.length === 17
+                : input.value.trim().length >= 3;
+
+            input.classList.toggle("error", !valid);
+
+            if (!valid) isValid = false;
+        });
+
+        if (!isValid) return;
+
+        document.querySelector(".question-modal").classList.remove('active');
+        document.querySelector(".thanks-modal").classList.add("active");
+
+        inputs.forEach(input => {
+            input.value = "";
+            input.classList.remove("error");
+        });
+    });
+};
+
 const objectPriceCard = document.querySelectorAll(".object-price__card, .special-program__card");
 
 if (objectPriceCard.length) {
@@ -462,6 +511,21 @@ const modernizationCards = document.querySelectorAll('.modernization-card__img')
 
 if (modernizationCards.length) {
     modernizationCards.forEach(btn => {
+        let img = btn.querySelector('img');
+
+        btn.onclick = () => {
+            document.querySelector('.layout-modal').classList.add('active');
+            document.querySelectorAll('.layout-modal .modal-content .main-img').forEach(data => {
+                data.setAttribute('src', img.getAttribute('src'));
+            })
+        }
+    })
+}
+
+const galleryCards = document.querySelectorAll('.gallery-card');
+
+if (galleryCards.length) {
+    galleryCards.forEach(btn => {
         let img = btn.querySelector('img');
 
         btn.onclick = () => {
@@ -509,6 +573,48 @@ if (cottageHomeContent) {
     }
 }
 
+const objectElementTextContent = document.querySelector('.object-element__text .text-list');
+const objectContentTExtContentBtn = document.querySelector('.object-element .more-text');
+
+if (objectElementTextContent && objectContentTExtContentBtn) {
+    objectContentTExtContentBtn.onclick = () => {
+        objectElementTextContent.classList.toggle('active');
+        objectContentTExtContentBtn.classList.toggle('active');
+    }
+}
+
+const cottageList = document.querySelector('.cottage .cottage-list');
+const cottageShowBtn = document.querySelector('.cottage .show-btn');
+
+if (cottageList && cottageShowBtn) {
+    cottageShowBtn.onclick = e => {
+        e.preventDefault();
+        cottageList.classList.toggle('active');
+        cottageShowBtn.classList.toggle('active');
+    }
+}
+
+const ownershipList = document.querySelector('.ownership-list');
+const ownershipShowBtn = document.querySelector('.ownership .show-btn');
+
+if (ownershipList && ownershipShowBtn) {
+    ownershipShowBtn.onclick = e => {
+        e.preventDefault();
+        ownershipList.classList.toggle('active');
+        ownershipShowBtn.classList.toggle('active');
+    }
+}
+
+const articleList = document.querySelector('.article-list');
+const articleShowBtn = document.querySelector('.article .show-btn');
+
+if (articleList && articleShowBtn) {
+    articleShowBtn.onclick = e => {
+        e.preventDefault();
+        articleList.classList.toggle('active');
+        articleShowBtn.classList.toggle('active');
+    }
+}
 
 
 

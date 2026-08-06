@@ -90,6 +90,15 @@
     .btn-main {
         width: 100%;
     }
+
+    .form-checkbox {
+        width: 100%;
+        margin-top: 20px;
+
+        &__text {
+            color: #fff;
+        }
+    }
 }
 
 .contact-home {

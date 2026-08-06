@@ -148,6 +148,56 @@ button, input, textarea, li, div {
             }
         }
     }
+
+    &-checkbox {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        max-width: 432px;
+
+        &__icon {
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            border: 1px solid #D9D9D9;
+            position: relative;
+            z-index: 1;
+
+            input {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 2;
+                opacity: 0;
+                cursor: pointer;
+            }
+
+            &:has(input:checked) {
+                background: #F4925E;
+            }
+        }
+
+        &__text {
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 100%;
+            color: #9D9D9D;
+            margin: -0.5px 0;
+
+            a {
+                display: inline;
+                text-decoration: underline;
+                text-underline-offset: 2px;
+            }
+        }
+    }
 }
 
 .btn {

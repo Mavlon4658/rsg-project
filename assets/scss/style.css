@@ -213,6 +213,50 @@ button, input, textarea, li, div {
 .form-select__list li:last-child {
   padding-bottom: 12px;
 }
+.form-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  max-width: 432px;
+}
+.form-checkbox__icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 1px solid #D9D9D9;
+  position: relative;
+  z-index: 1;
+}
+.form-checkbox__icon input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  opacity: 0;
+  cursor: pointer;
+}
+.form-checkbox__icon:has(input:checked) {
+  background: #F4925E;
+}
+.form-checkbox__text {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 100%;
+  color: #9D9D9D;
+  margin: -0.5px 0;
+}
+.form-checkbox__text a {
+  display: inline;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
 
 .btn-main {
   border-radius: 100px;
@@ -2873,6 +2917,13 @@ button, input, textarea, li, div {
 }
 .contact .btn-main {
   width: 100%;
+}
+.contact .form-checkbox {
+  width: 100%;
+  margin-top: 20px;
+}
+.contact .form-checkbox__text {
+  color: #fff;
 }
 
 .contact-home {
@@ -5589,28 +5640,6 @@ button, input, textarea, li, div {
   flex-direction: column;
   gap: 18px;
 }
-.article-page__content .texts {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-.article-page__content .texts li {
-  font-weight: 500;
-  font-size: 18px;
-  padding-left: 24px;
-  position: relative;
-}
-.article-page__content .texts li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: #F4925E;
-}
 
 .related-article {
   padding: 120px 0;
@@ -5866,21 +5895,6 @@ button, input, textarea, li, div {
 @media screen and (max-width: 700px) {
   .news-page__content .sec-title {
     font-size: 27px;
-  }
-}
-.news-page__content ul {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-.news-page__content ul li {
-  font-size: 18px;
-  line-height: 133%;
-}
-@media screen and (max-width: 992px) {
-  .news-page__content ul li {
-    line-height: 15px;
-    line-height: 147%;
   }
 }
 .news-page__img {
@@ -6476,41 +6490,27 @@ button, input, textarea, li, div {
     line-height: 17px;
   }
 }
-.information-page__content .content-item__text {
+.information-page__content .content-item .mytext {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-.information-page__content .content-item__text ul {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
+.information-page__content .content-item .mytext p {
+  margin: 0;
 }
-.information-page__content .content-item__text p, .information-page__content .content-item__text li {
-  font-size: 18px;
-  line-height: 133%;
-}
-@media screen and (max-width: 992px) {
-  .information-page__content .content-item__text p, .information-page__content .content-item__text li {
-    font-size: 15px;
-    line-height: 147%;
-  }
-}
-.information-page__content .content-item__text p a, .information-page__content .content-item__text li a {
-  display: inline;
-  text-decoration: underline;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
-}
-.information-page__content .content-item__text p b, .information-page__content .content-item__text li b {
+.information-page__content .content-item .mytext p b {
   font-weight: 600;
 }
-.information-page__content .content-item__text li {
+.information-page__content .content-item .mytext ul {
+  gap: 4px;
+}
+.information-page__content .content-item .mytext li {
+  font-weight: 400;
   padding-left: 24px;
   position: relative;
 }
-.information-page__content .content-item__text li::before {
+.information-page__content .content-item .mytext li::before {
   content: "";
   position: absolute;
   left: 0;
@@ -8420,7 +8420,18 @@ button, input, textarea, li, div {
 }
 @media screen and (max-width: 700px) {
   .question-modal .bg-2 {
-    width: 94px;
+    width: 86px;
+    display: none;
+  }
+}
+.question-modal .bg-2.sm {
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  .question-modal .bg-2.sm {
+    display: block;
+    bottom: 71px;
+    border-radius: 0 0 0 12px;
   }
 }
 .question-modal .bg-3 {
@@ -8437,6 +8448,15 @@ button, input, textarea, li, div {
 @media screen and (max-width: 700px) {
   .question-modal .bg-3 {
     width: 112px;
+    display: none;
+  }
+}
+.question-modal .bg-3.sm {
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  .question-modal .bg-3.sm {
+    display: block;
   }
 }
 .question-modal .modal-content {
@@ -8509,6 +8529,7 @@ button, input, textarea, li, div {
 @media screen and (max-width: 992px) {
   .question-modal__form {
     max-width: 314px;
+    margin-bottom: 32px;
   }
 }
 .question-modal__form .btn-main {
@@ -8555,4 +8576,52 @@ button, input, textarea, li, div {
   .layout-modal .main-img.lg {
     display: block;
   }
+}
+
+.mytext p {
+  font-size: 18px;
+  line-height: 133%;
+  color: #141414;
+}
+@media screen and (max-width: 992px) {
+  .mytext p {
+    font-size: 15px;
+    line-height: 147%;
+  }
+}
+.mytext p:not(:last-child) {
+  margin-bottom: 12px;
+}
+.mytext ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.mytext ul li {
+  font-weight: 500;
+  font-size: 18px;
+  padding-left: 24px;
+  position: relative;
+}
+@media screen and (max-width: 992px) {
+  .mytext ul li {
+    font-size: 15px;
+    line-height: 147%;
+  }
+}
+.mytext ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #F4925E;
+}
+.mytext ul li a {
+  display: inline;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }/*# sourceMappingURL=style.css.map */

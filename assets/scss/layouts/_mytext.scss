@@ -1,0 +1,52 @@
+.mytext {
+    p {
+        font-size: 18px;
+        line-height: 133%;
+        color: #141414;
+
+        @include media(992) {
+            font-size: 15px;
+            line-height: 147%;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        li {
+            font-weight: 500;
+            font-size: 18px;
+            padding-left: 24px;
+            position: relative;
+
+            @include media(992) {
+                font-size: 15px;
+                line-height: 147%;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background: #F4925E;
+            }
+
+            a {
+                display: inline;
+                text-decoration: underline;
+                text-underline-offset: 3px;
+            }
+        }
+    }
+}

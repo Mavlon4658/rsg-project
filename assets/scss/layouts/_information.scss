@@ -546,39 +546,26 @@
                     }
                 }
 
-                &__text {
+                .mytext {
                     width: 100%;
                     display: flex;
                     flex-direction: column;
                     gap: 12px;
 
-                    ul {
-                        display: flex;
-                        flex-direction: column;
-                        gap: 4px;
-                    }
-
-                    p, li {
-                        font-size: 18px;
-                        line-height: 133%;
-
-                        @include media(992) {
-                            font-size: 15px;
-                            line-height: 147%;
-                        }
-                        
-                        a {
-                            display: inline;
-                            text-decoration: underline;
-                            text-decoration-skip-ink: none;
-                        }
+                    p {
+                        margin: 0;
 
                         b {
                             font-weight: 600;
                         }
                     }
 
+                    ul {
+                        gap: 4px;
+                    }
+
                     li {
+                        font-weight: 400;
                         padding-left: 24px;
                         position: relative;
 

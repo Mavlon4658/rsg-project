@@ -224,21 +224,23 @@
             }
         }
 
-        ul {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-
-            li {
-                font-size: 18px;
-                line-height: 133%;
-
-                @include media(992) {
-                    line-height: 15px;
-                    line-height: 147%;
-                }
-            }
-        }
+        // .mytext {
+        //     ul {
+        //         display: flex;
+        //         flex-direction: column;
+        //         gap: 12px;
+    
+        //         li {
+        //             font-size: 18px;
+        //             line-height: 133%;
+    
+        //             @include media(992) {
+        //                 line-height: 15px;
+        //                 line-height: 147%;
+        //             }
+        //         }
+        //     }
+        // }
     }
 
     &__img {

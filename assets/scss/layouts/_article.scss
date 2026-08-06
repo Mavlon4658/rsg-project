@@ -428,31 +428,6 @@
             flex-direction: column;
             gap: 18px;
         }
-
-        .texts {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-
-            li {
-                font-weight: 500;
-                font-size: 18px;
-                padding-left: 24px;
-                position: relative;
-
-                &::before {
-                    content: "";
-                    position: absolute;
-                    left: 0;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    width: 12px;
-                    height: 12px;
-                    border-radius: 50%;
-                    background: #F4925E;
-                }
-            }
-        }
     }
 }
 

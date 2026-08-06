@@ -109,7 +109,18 @@
         }
 
         @include media(700) {
-            width: 94px;
+            width: 86px;
+            display: none;
+        }
+
+        &.sm {
+            display: none;
+
+            @include media(700) {
+                display: block;
+                bottom: 71px;
+                border-radius: 0 0 0 12px;
+            }
         }
     }
 
@@ -125,6 +136,15 @@
 
         @include media(700) {
             width: 112px;
+            display: none;
+        }
+
+        &.sm {
+            display: none;
+
+            @include media(700) {
+                display: block;
+            }
         }
     }
 
@@ -196,6 +216,7 @@
 
         @include media(992) {
             max-width: 314px;
+            margin-bottom: 32px;
         }
 
         .btn-main {

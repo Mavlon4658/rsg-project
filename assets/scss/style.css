@@ -5875,13 +5875,6 @@ button, input, textarea, li, div {
 .news-page__content {
   width: 100%;
 }
-.news-page__content p {
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 11px;
-  color: #a9a9a9;
-  margin-bottom: 20px;
-}
 .news-page__content .sec-title {
   line-height: 35px;
   margin-bottom: 28px;

@@ -3455,7 +3455,7 @@ button, input, textarea, li, div {
 .object-home__text .text-content {
   width: 100%;
 }
-.object-home__text h3 {
+.object-home__text .subtitle {
   font-weight: 600;
   font-size: 18px;
   line-height: 133%;

@@ -2675,6 +2675,9 @@ button, input, textarea, li, div {
     margin-bottom: 48px;
   }
 }
+.project-cottage h2 {
+  display: none;
+}
 .project-cottage .project-content {
   margin-bottom: 0;
 }
